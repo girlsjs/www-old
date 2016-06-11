@@ -136,7 +136,7 @@ article > p strong {
 }
 
 .color-blue .pararell-container {
-  background: url('/assets/pararell-blue.png') top left;
+  background: url('../assets/pararell-blue.png') top left;
 }
 
 section.color-blue {
@@ -149,7 +149,7 @@ section.color-blue {
 }
 
 .color-magenta .pararell-container {
-  background: url('/assets/pararell-magenta.png') top left;
+  background: url('../assets/pararell-magenta.png') top left;
 }
 
 section.color-magenta {
@@ -162,7 +162,7 @@ section.color-magenta {
 }
 
 .color-green .pararell-container {
-  background: url('/assets/pararell-green.png') top left;
+  background: url('../assets/pararell-green.png') top left;
 }
 
 section.color-green {
@@ -175,7 +175,7 @@ section.color-green {
 }
 
 .color-violet .pararell-container {
-  background: url('/assets/pararell-violet.png') top left;
+  background: url('../assets/pararell-violet.png') top left;
 }
 
 section.color-violet {
