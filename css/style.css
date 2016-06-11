@@ -1,0 +1,129 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+
+#page > section {
+  overflow: auto;
+}
+
+section > article {
+  width: 1200px;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 0px auto;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 40px 80px;
+}
+
+article > h2 {
+  font-size: 38px;
+}
+
+article > p {
+  font-size: 22px;
+  line-height: 38px;
+  margin: 40px 0px;
+  color: #202020;
+}
+
+article > p strong {
+  font-weight: bold;
+}
+
+@media screen and (min-device-width: 786px) and (max-device-width: 1200px) {
+  section > article {
+    width: 786px;
+  }
+
+  article > h2 {
+    font-size: 32px;
+  }
+
+  article > p {
+    font-size: 20px;
+    line-height: 34px;
+    margin: 32px 0px;
+  }
+}
+
+@media screen and (min-device-width: 410px) and (max-device-width: 785px) {
+  section > article {
+    width: auto;
+    padding: 35px 30px;
+    margin: 0px 10px;
+  }
+
+  article > h2 {
+    font-size: 28px;
+    margin: 0px;
+  }
+
+  article > p {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 28px 0px;
+  }
+}
+
+@media screen and (max-device-width: 410px) {
+  section > article {
+    width: auto;
+    padding: 30px 20px 30px 15px;
+    margin-left: 5px;
+  }
+
+  article > h2 {
+    font-size: 24px;
+    margin: 0px;
+  }
+
+  article > p {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 26px 0px;
+  }
+}
+
+/* Colors */
+
+.color-blue h2,
+.color-blue strong {
+  color: rgb(76, 155, 237);
+}
+
+section.color-blue {
+  background: rgb(76, 155, 237);
+}
+
+.color-magenta h2,
+.color-magenta strong {
+  color: rgb(252, 72, 153);
+}
+
+section.color-magenta {
+  background: rgb(252, 72, 153);
+}
+
+.color-green h2,
+.color-green strong {
+  color: rgb(28, 201, 92);
+}
+
+section.color-green {
+  background: rgb(28, 201, 92);
+}
+
+.color-violet h2,
+.color-violet strong {
+  color: rgb(101, 45, 185);
+}
+
+section.color-violet {
+  background: rgb(101, 45, 185);
+}
