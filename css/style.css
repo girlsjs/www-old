@@ -36,7 +36,7 @@ article > p strong {
   font-weight: bold;
 }
 
-@media screen and (min-device-width: 786px) and (max-device-width: 1200px) {
+@media screen and (min-device-width: 796px) and (max-device-width: 1210px), screen and (min-width: 796px) and (max-width: 1210px) {
   section > article {
     width: 786px;
   }
@@ -52,7 +52,7 @@ article > p strong {
   }
 }
 
-@media screen and (min-device-width: 410px) and (max-device-width: 785px) {
+@media screen and (min-device-width: 410px) and (max-device-width: 795px), screen and (min-width: 410px) and (max-width: 795px) {
   section > article {
     width: auto;
     padding: 35px 30px;
@@ -71,7 +71,7 @@ article > p strong {
   }
 }
 
-@media screen and (max-device-width: 410px) {
+@media screen and (max-device-width: 410px), screen and (max-width: 410px) {
   section > article {
     width: auto;
     padding: 30px 20px 30px 15px;
