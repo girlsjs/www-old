@@ -12,13 +12,28 @@ body {
   overflow: auto;
 }
 
-section > article {
+section .section-container {
   width: 1200px;
-  background: rgba(255, 255, 255, 0.9);
   margin: 0px auto;
-  overflow: auto;
   box-sizing: border-box;
-  padding: 40px 80px;
+}
+
+.pararell-container {
+  width: 300px;
+}
+
+section:nth-child(odd) .pararell-container {
+  float: left;
+}
+
+section:nth-child(even) .pararell-container {
+  float: right;
+}
+
+section article {
+  background: rgba(255, 255, 255, 0.9);
+  overflow: auto;
+  padding: 40px 50px;
 }
 
 article > h2 {
@@ -26,7 +41,7 @@ article > h2 {
 }
 
 article > p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 38px;
   margin: 40px 0px;
   color: #202020;
@@ -36,9 +51,17 @@ article > p strong {
   font-weight: bold;
 }
 
+/* Media Queries */
+
 @media screen and (min-device-width: 796px) and (max-device-width: 1210px), screen and (min-width: 796px) and (max-width: 1210px) {
-  section > article {
+  section .section-container {
     width: 786px;
+  }
+
+  .pararell-container {
+    float: left;
+    width: 200px;
+    height: 931px;
   }
 
   article > h2 {
@@ -46,15 +69,22 @@ article > p strong {
   }
 
   article > p {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 34px;
     margin: 32px 0px;
   }
 }
 
 @media screen and (min-device-width: 410px) and (max-device-width: 795px), screen and (min-width: 410px) and (max-width: 795px) {
-  section > article {
+  section .section-container {
     width: auto;
+  }
+
+  .pararell-container {
+    display: none;
+  }
+
+  section article {
     padding: 35px 30px;
     margin: 0px 10px;
   }
@@ -72,7 +102,15 @@ article > p strong {
 }
 
 @media screen and (max-device-width: 410px), screen and (max-width: 410px) {
-  section > article {
+  section .section-container {
+    width: auto;
+  }
+
+  .pararell-container {
+    display: none;
+  }
+
+  section article {
     width: auto;
     padding: 30px 20px 30px 15px;
     margin-left: 5px;
@@ -97,6 +135,10 @@ article > p strong {
   color: rgb(76, 155, 237);
 }
 
+.color-blue .pararell-container {
+  background: url('/assets/pararell-blue.png') top left;
+}
+
 section.color-blue {
   background: rgb(76, 155, 237);
 }
@@ -104,6 +146,10 @@ section.color-blue {
 .color-magenta h2,
 .color-magenta strong {
   color: rgb(252, 72, 153);
+}
+
+.color-magenta .pararell-container {
+  background: url('/assets/pararell-magenta.png') top left;
 }
 
 section.color-magenta {
@@ -115,6 +161,10 @@ section.color-magenta {
   color: rgb(28, 201, 92);
 }
 
+.color-green .pararell-container {
+  background: url('/assets/pararell-green.png') top left;
+}
+
 section.color-green {
   background: rgb(28, 201, 92);
 }
@@ -122,6 +172,10 @@ section.color-green {
 .color-violet h2,
 .color-violet strong {
   color: rgb(101, 45, 185);
+}
+
+.color-violet .pararell-container {
+  background: url('/assets/pararell-violet.png') top left;
 }
 
 section.color-violet {
