@@ -1,5 +1,5 @@
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -31,17 +31,20 @@ section:nth-child(even) .pararell-container {
 }
 
 section article {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 1);
   overflow: auto;
   padding: 40px 50px;
+  box-shadow: 0px 0px 4px black;
+  box-sizing: border-box;
 }
 
 article > h2 {
   font-size: 38px;
+  font-family: 'Raleway', sans-serif;
 }
 
 article > p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 38px;
   margin: 40px 0px;
   color: #202020;
@@ -69,7 +72,7 @@ article > p strong {
   }
 
   article > p {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 34px;
     margin: 32px 0px;
   }
@@ -140,7 +143,7 @@ article > p strong {
 }
 
 section.color-blue {
-  background: rgb(76, 155, 237);
+  background: rgb(108, 171, 237);
 }
 
 .color-magenta h2,
@@ -153,7 +156,7 @@ section.color-blue {
 }
 
 section.color-magenta {
-  background: rgb(252, 72, 153);
+  background: rgb(246, 116, 174);
 }
 
 .color-green h2,
@@ -166,7 +169,7 @@ section.color-magenta {
 }
 
 section.color-green {
-  background: rgb(28, 201, 92);
+  background: rgb(74, 212, 125);
 }
 
 .color-violet h2,
@@ -179,5 +182,5 @@ section.color-green {
 }
 
 section.color-violet {
-  background: rgb(101, 45, 185);
+  background: rgb(129, 92, 184);
 }
