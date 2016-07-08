@@ -18,4 +18,4 @@
 
   window.addEventListener('scroll', scrollBackground)
   document.addEventListener('DOMContentLoaded', scrollBackground)
-}())
+})

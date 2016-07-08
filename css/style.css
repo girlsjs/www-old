@@ -1,5 +1,5 @@
 html {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -18,29 +18,16 @@ section .section-container {
   box-sizing: border-box;
 }
 
-.pararell-container {
-  width: 300px;
-}
-
-section:nth-child(odd) .pararell-container {
-  float: left;
-}
-
-section:nth-child(even) .pararell-container {
-  float: right;
-}
-
 section article {
   background: rgba(255, 255, 255, 1);
   overflow: auto;
-  padding: 40px 50px;
-  box-shadow: 0px 0px 4px black;
+  padding: 80px 50px 40px;
   box-sizing: border-box;
 }
 
 article > h2 {
   font-size: 38px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 article > p {
@@ -61,12 +48,6 @@ article > p strong {
     width: 786px;
   }
 
-  .pararell-container {
-    float: left;
-    width: 200px;
-    height: 931px;
-  }
-
   article > h2 {
     font-size: 32px;
   }
@@ -81,10 +62,6 @@ article > p strong {
 @media screen and (min-device-width: 410px) and (max-device-width: 795px), screen and (min-width: 410px) and (max-width: 795px) {
   section .section-container {
     width: auto;
-  }
-
-  .pararell-container {
-    display: none;
   }
 
   section article {
@@ -107,10 +84,6 @@ article > p strong {
 @media screen and (max-device-width: 410px), screen and (max-width: 410px) {
   section .section-container {
     width: auto;
-  }
-
-  .pararell-container {
-    display: none;
   }
 
   section article {
@@ -138,25 +111,9 @@ article > p strong {
   color: rgb(76, 155, 237);
 }
 
-.color-blue .pararell-container {
-  background: url('../assets/pararell-blue.png') top left;
-}
-
-section.color-blue {
-  background: rgb(108, 171, 237);
-}
-
 .color-magenta h2,
 .color-magenta strong {
   color: rgb(252, 72, 153);
-}
-
-.color-magenta .pararell-container {
-  background: url('../assets/pararell-magenta.png') top left;
-}
-
-section.color-magenta {
-  background: rgb(246, 116, 174);
 }
 
 .color-green h2,
@@ -164,23 +121,22 @@ section.color-magenta {
   color: rgb(28, 201, 92);
 }
 
-.color-green .pararell-container {
-  background: url('../assets/pararell-green.png') top left;
-}
-
-section.color-green {
-  background: rgb(74, 212, 125);
-}
-
 .color-violet h2,
 .color-violet strong {
   color: rgb(101, 45, 185);
 }
 
-.color-violet .pararell-container {
-  background: url('../assets/pararell-violet.png') top left;
+/*
+section.color-blue {
+  background: rgb(108, 171, 237);
 }
-
+section.color-magenta {
+  background: rgb(246, 116, 174);
+}
+section.color-green {
+  background: rgb(74, 212, 125);
+}
 section.color-violet {
-  background: rgb(129, 92, 184);
+  background: rgb(134, 90, 199);
 }
+*/
