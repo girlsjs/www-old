@@ -10,6 +10,8 @@ body {
 
 #page > section {
   overflow: auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section .section-container {
@@ -19,7 +21,7 @@ section .section-container {
 }
 
 section article {
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.4);
   overflow: auto;
   padding: 80px 50px 40px;
   box-sizing: border-box;
@@ -103,40 +105,3 @@ article > p strong {
     margin: 26px 0px;
   }
 }
-
-/* Colors */
-
-.color-blue h2,
-.color-blue strong {
-  color: rgb(76, 155, 237);
-}
-
-.color-magenta h2,
-.color-magenta strong {
-  color: rgb(252, 72, 153);
-}
-
-.color-green h2,
-.color-green strong {
-  color: rgb(28, 201, 92);
-}
-
-.color-violet h2,
-.color-violet strong {
-  color: rgb(101, 45, 185);
-}
-
-/*
-section.color-blue {
-  background: rgb(108, 171, 237);
-}
-section.color-magenta {
-  background: rgb(246, 116, 174);
-}
-section.color-green {
-  background: rgb(74, 212, 125);
-}
-section.color-violet {
-  background: rgb(134, 90, 199);
-}
-*/
