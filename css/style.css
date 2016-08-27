@@ -36,8 +36,15 @@ article .header {
   font-family: 'Poiret One', sans-serif;
   padding-bottom: 5px;
   border-bottom: 1px #dddcd7 solid;
+  cursor: pointer;
+  color: black;
 
-  transition: padding-left 0.5s;
+  transition: padding-left 0.5s, color 0.5s;
+}
+
+article .header:hover {
+  padding-left: 20px;
+  color: #223399;
 }
 
 article:last-child .header {
