@@ -61,7 +61,7 @@ article .header {
 
 article.open .header,
 article .header:hover {
-  color: #E5BB31;
+  /*color: #E5BB31;*/
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -86,13 +86,20 @@ article .content h2 {
 }
 
 article .content {
-  display: none;
-  margin: 10px 0px 30px;
   font-size: 20px;
+  height: 0;
+  overflow: hidden;
+
+  transition: height 0.5s, margin 0.5s;
 }
 
 article.open .content {
   display: block;
+  margin: 10px 0px 30px;
+}
+
+article section {
+  overflow: auto;
 }
 
 article a {
