@@ -4,9 +4,9 @@
     var articles = document.querySelectorAll('article')
 
     articles.forEach(function (article) {
-      var header = article.querySelector('.header')
+      var headerContainer = article.querySelector('.header-container')
 
-      header.addEventListener('click', function () {
+      headerContainer.addEventListener('click', function () {
         // articles.forEach(function (a) {
         //   a.classList.remove('open')
         //   var c = a.querySelector('.content')
