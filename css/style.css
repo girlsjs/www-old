@@ -6,7 +6,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-y: scroll;
-  background-color: #370E65;
+  background-color: #f2d989;
 }
 
 #page-wrapper {
@@ -37,7 +37,7 @@ body {
 
 header {
   height: 200px;
-  background-color: #A27BCD;
+  background-color: #f2d163;
 }
 
 footer {
@@ -59,7 +59,7 @@ article .header {
   padding-bottom: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: black;
+  color: #5f2b9b;
   width: 100%;
   background: white;
   background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 80%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
