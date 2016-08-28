@@ -6,25 +6,36 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-y: scroll;
+  background-color: #e0e0e0;
 }
 
-#page {
+@media screen and (min-width: 960px) {
+  #page {
+    width: 960px;
+    margin: 0 auto
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #page {
+    width: 1200px;
+    margin: 0 auto
+  }
 }
 
 #content {
   background: white;
+  overflow: auto;
 }
 
 header {
   height: 200px;
-  background-color: #7995f2;
+  background-color: #A27BCD;
 }
 
 footer {
   height: 300px;
-  background-color: #abd;
-  /*background-color: #dadff2;*/
-  /*background-color: #239;*/
+  background-color: #370E65;
 }
 
 article {
@@ -45,13 +56,21 @@ article .header {
 article .header:hover {
   padding-left: 20px;
   color: #223399;
+  color: #E5BB31;
 }
 
 article:last-child .header {
   border-bottom: none 0px;
 }
 
-article section {
+article .content h2 {
+  font-family: 'Poiret One', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+article .content {
   display: none;
   margin: 10px 0px 30px;
   font-size: 20px;
@@ -61,6 +80,18 @@ article.open .header {
   padding-left: 20px;
 }
 
-article.open section {
+article.open .content {
   display: block;
+}
+
+article a {
+  text-decoration: none;
+  color: #5C94CA;
+
+  transition: color 0.5s;
+}
+
+article a:hover {
+  text-decoration: none;
+  color: #925ECD;
 }
