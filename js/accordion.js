@@ -22,8 +22,8 @@
           })
         }
 
-        article.classList.toggle('open')
         content.style.height = height + 'px'
+        article.classList.toggle('open')
       })
     })
   }
