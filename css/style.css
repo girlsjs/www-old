@@ -206,6 +206,12 @@ article a:hover {
 article .header {
 }
 
+.header-container.about {
+  background: url('../assets/duck.jpg');
+  background-size: 885px;
+  background-position: -390px -510px;
+}
+
 .header-container.workshop {
   background: url('../assets/workshop2.jpg');
   background-size: 700px;
@@ -216,4 +222,10 @@ article .header {
   background: url('../assets/materials.jpg');
   background-size: 700px;
   background-position: right -20px;
+}
+
+.header-container.join{
+  background: url('../assets/more-ducks.jpg');
+  background-size: 900px;
+  background-position: -486px -523px;
 }
