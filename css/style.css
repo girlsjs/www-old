@@ -55,7 +55,7 @@ body {
   }
 
   #content {
-    margin-top: 120px;
+    margin-top: 100px;
   }
 }
 
@@ -78,20 +78,20 @@ header {
   width: 100%;
   box-sizing: border-box;
 
-  transition: height 0.5s;
+  transition: height 0.1s;
 }
 
 .logo {
   transform-origin: top left;
   position: absolute;
-  top: 10px;
   left: 10px;
+  margin-top: 10px;
 
-  transition: transform 0.5s;
+  transition: transform 0.1s;
 }
 
 .duck {
-  background: url('../assets/kaczucha.png') center no-repeat;
+  background: url('../assets/kaczucha.svg') center no-repeat;
   background-size: contain;
   float: left;
   height: 40px;
@@ -108,8 +108,8 @@ header {
 
 @media screen and (min-width: 472px) {
   .logo {
-    margin-top: 0px;
     top: 0px;
+    margin-top: 0px;
   }
 
   header {
@@ -125,11 +125,11 @@ header {
   .duck {
     height: 80px;
     width: 80px;
-    margin: 20px 20px 10px 40px;
+    margin: 10px 20px 10px 40px;
   }
 
   .title {
-    font-size: 80px;
+    font-size: 70px;
     margin-top: 0px;
     margin-left: 0px;
   }
@@ -138,21 +138,22 @@ header {
 
 @media screen and (min-width: 960px) {
   header {
-    height: 80px;
+    /*height: 80px;*/
+    height: 100px;
     width: 940px;
     padding-right: 0px;
   }
 
-  .logo {
+  /*.logo {
     transform: scale(0.7, 0.7);
     left: 10px;
-  }
+  }*/
 }
 
 
 @media screen and (min-width: 1220px) {
   header {
-    height: 120px;
+    height: 100px;
     width: 1200px
   }
 
@@ -197,7 +198,7 @@ footer {
  }
 
  .menu-button {
-   margin-top: 10px;
+   margin-top: 15px;
    margin-right: 20px;
    background: #f2d163;
    text-align: center;
