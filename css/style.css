@@ -76,6 +76,7 @@ header {
   position: fixed;
   height: 60px;
   width: 100%;
+  box-sizing: border-box;
 
   transition: height 0.5s;
 }
@@ -105,73 +106,14 @@ header {
   font-size: 35px;
 }
 
-
-header .menu {
-  display: block;
-  float: right;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #5c94ca;
-  margin-right: 30px;
-  font-size: 20px;
-}
-
-header nav {
-  float: right;
-  text-align: right;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-header nav a {
-  font-size: 15px;
-  padding: 0 5px;
-  color: #5c94ca;
-  text-decoration: none;
-  line-height: 30px;
-
-  transition: color 0.5s;
-}
-
-header nav a:hover {
-  color: #925ecd;
-}
-
-@media screen and (max-width: 760px) {
-  header nav {
-    position: absolute;
-    right: 70px;
-    top: 40px;
-    width: 180px;
-    background: white;
-    height: 180px;
-  }
-
-  header nav a {
-    display: block;
-    font-size: 18px;
-    height: 30px;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 472px) {
-  header nav {
-    top: 50px;
-    right: 10px;
-  }
-}
-
 @media screen and (min-width: 472px) {
   .logo {
     margin-top: 0px;
     top: 0px;
   }
 
-  header .menu {
-    margin-right: 90px;
-    margin-top: 10px;
+  header {
+    padding-right: 60px;
   }
 }
 
@@ -191,39 +133,19 @@ header nav a:hover {
     margin-top: 0px;
     margin-left: 0px;
   }
-
-  header .menu {
-    display: none;
-  }
-
-  header nav {
-    margin-right: 70px;
-    display: block;
-  }
 }
 
 
 @media screen and (min-width: 960px) {
   header {
     height: 80px;
-    width: 940px
+    width: 940px;
+    padding-right: 0px;
   }
 
   .logo {
     transform: scale(0.7, 0.7);
     left: 10px;
-  }
-
-  header nav {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 20px;
-  }
-
-  header nav a {
-    font-size: 18px;
-    line-height: 50px;
-    padding: 0 10px;
   }
 }
 
@@ -261,6 +183,60 @@ footer {
   footer .container {
     width: 1200px;
     margin: 0 auto
+  }
+}
+
+/*
+ * -- Menu styles --
+ */
+
+ .menu {
+   text-align: right;
+   float: right;
+   margin-right: 0px;
+ }
+
+ .menu-button {
+   margin-top: 10px;
+   margin-right: 20px;
+   background: #f2d163;
+   text-align: center;
+   color: white;
+   width: 40px;
+   height: 40px;
+   border-radius: 20px;
+   line-height: 40px;
+   display: inline-block;
+   font-weight: bold;
+ }
+
+ .menu:hover nav {
+   height: 210px;
+ }
+
+ nav {
+   height: 0px;
+   overflow: hidden;
+   background: #f6efd6;
+   margin-right: 10px;
+   margin-top: 5px;
+   border-radius: 10px;
+
+   transition: height 0.5s;
+ }
+
+ nav a {
+   color: #5c94ca;
+   padding: 0px 20px;
+   line-height: 35px;
+   display: block;
+   text-decoration: none;
+ }
+
+
+@media screen and (min-width: 472px) {
+  .menu-button {
+    margin-top: 5px;
   }
 }
 
