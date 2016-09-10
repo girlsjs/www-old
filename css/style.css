@@ -275,17 +275,25 @@ footer h2 {
 
 article {
   margin: 0px 20px;
+  line-height: 30px;
+  padding: 0 20px;
 }
 
 article h1 {
   font-weight: normal;
-  font-size: 40px;
+  font-size: 35px;
   border-bottom: solid 1px #dfded7;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
-article {
-  line-height: 30px;
-  padding: 0 20px;
+article h2 {
+  font-weight: normal;
+  font-size: 28px;
+  color: #444;
+}
+
+article a {
+  color: #5c94ca;
+  text-decoration: none;
 }
