@@ -138,16 +138,10 @@ header {
 
 @media screen and (min-width: 960px) {
   header {
-    /*height: 80px;*/
     height: 100px;
     width: 940px;
     padding-right: 0px;
   }
-
-  /*.logo {
-    transform: scale(0.7, 0.7);
-    left: 10px;
-  }*/
 }
 
 
@@ -185,6 +179,14 @@ footer {
     width: 1200px;
     margin: 0 auto
   }
+}
+
+footer h2 {
+  font-weight: normal;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 20px;
+  margin-top: 0px;
 }
 
 /*
@@ -241,6 +243,32 @@ footer {
   }
 }
 
+
+@media screen and (min-width: 760px) {
+  .menu-button {
+    display: none;
+  }
+
+  .menu nav,
+  .menu:hover nav {
+    height: 50px;
+    background: none;
+    margin-top: 0px;
+  }
+
+  nav a {
+    display: inline;
+    padding: 0px 5px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  nav a {
+    font-size: 18px;
+  }
+}
+
 /*
  * -- Article --
  */
@@ -260,12 +288,4 @@ article h1 {
 article {
   line-height: 30px;
   padding: 0 20px;
-}
-
-footer h2 {
-  font-weight: normal;
-  font-size: 40px;
-  margin-bottom: 10px;
-  padding: 20px;
-  margin-top: 0px;
 }
