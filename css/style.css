@@ -1,17 +1,3 @@
-@keyframes accordionIn {
-  0% {
-    opacity: 1;
-    transform:scale(0.9) rotateX(90deg);
-    transform-origin: top;
-  }
-  100% {
-    opacity:1;
-    transform:scale(1);
-    transform-origin: top;
-  }
-}
-
-
 html {
   font-family: 'Poppins', sans-serif;
 }
@@ -20,7 +6,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-y: scroll;
-  background-color: #f2d989;
+  background-color: #e2e2e2;
 }
 
 #page-wrapper {
@@ -32,27 +18,45 @@ body {
   z-index: 2;
   padding-bottom: 30px;
   background: white;
-}
-
-@media screen and (min-width: 962px) {
-  #page {
-    width: 960px;
-    margin: 0 auto;
-    border-left: solid 1px #dfded7;
-    border-right: solid 1px #dfded7;
-  }
-}
-
-@media screen and (min-width: 1202px) {
-  #page {
-    width: 1200px;
-    margin: 0 auto;
-  }
+  overflow: auto;
 }
 
 #content {
   background: white;
   overflow: auto;
+  margin-top: 60px;
+
+  transition: margin-top 0.5s;
+}
+
+@media screen and (min-width: 472px) {
+  #page {
+    margin: 0px 30px;
+    border-left: solid 1px #dfded7;
+    border-right: solid 1px #dfded7;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #page {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  #content {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  #page {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  #content {
+    margin-top: 120px;
+  }
 }
 
 .header-back {
@@ -63,48 +67,156 @@ body {
   z-index: 1;
 }
 
+/*
+ * -- HEADER STYLES --
+ */
+
 header {
   background: white;
   overflow: auto;
-  height: 110px;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+
+  transition: height 0.5s;
 }
 
 .logo {
-  height: 70px;
-  width: 70px;
+  transform-origin: top left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  left: 10px;
+
+  transition: transform 0.5s;
+}
+
+.duck {
   background: url('../assets/kaczucha.png') center no-repeat;
   background-size: contain;
-  margin: 20px;
-  margin-left: 30px;
   float: left;
+  height: 40px;
+  width: 40px;
+  margin: 5px 10px;
 }
 
 .title {
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 70px;
   font-family: 'Poiret One', sans-serif;
   font-weight: normal;
+  float: left;
+  font-size: 35px;
+}
+
+header nav {
+  float: right;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+header .menu {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #5c94ca;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+header nav a {
+  font-size: 15px;
+  padding: 0 5px;
+  color: #5c94ca;
+  text-decoration: none;
+  line-height: 30px;
+
+  transition: color 0.5s;
+}
+
+header nav a:hover {
+  color: #925ecd;
 }
 
 @media screen and (min-width: 472px) {
   header {
-    height: 160px;
   }
 
+  header .menu {
+    margin-right: 90px;
+  }
+}
+
+@media screen and (min-width: 760px) {
   .logo {
-    height: 100px;
-    width: 100px;
-    margin: 30px;
-    margin-left: 50px;
+    transform: scale(0.5, 0.5);
+  }
+
+  .duck {
+    height: 80px;
+    width: 80px;
+    margin: 20px 20px 10px 40px;
   }
 
   .title {
-    margin-left: 180px;
-    margin-top: 10px;
-    font-size: 100px;
+    font-size: 80px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  header nav {
+    margin-right: 70px;
+    display: block;
   }
 }
+
+
+@media screen and (min-width: 960px) {
+  header {
+    height: 80px;
+    width: 940px
+  }
+
+  .logo {
+    transform: scale(0.7, 0.7);
+    left: 10px;
+  }
+
+  header nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+
+  header nav a {
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 10px;
+  }
+}
+
+
+@media screen and (min-width: 1220px) {
+  header {
+    height: 120px;
+    width: 1200px
+  }
+
+  .logo {
+    transform: scale(1, 1);
+    left: 0px;
+  }
+}
+
+/*
+ * -- FOOTER STYLES --
+ */
 
 footer {
   height: 300px;
@@ -112,146 +224,45 @@ footer {
   z-index: 2;
 }
 
-@media screen and (min-width: 962px) {
+@media screen and (min-width: 960px) {
   footer .container {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 1202px) {
+@media screen and (min-width: 1220px) {
   footer .container {
     width: 1200px;
     margin: 0 auto
   }
 }
 
-footer h2 {
-  font-family: 'Poiret One', sans-serif;
-  font-weight: normal;
-  font-size: 50px;
-  margin-bottom: 10px;
-  padding: 20px;
-  margin-top: 0px;
-}
+/*
+ * -- Article --
+ */
 
 article {
   margin: 0px 20px;
 }
 
-article .header-container {
-  border-bottom: 1px #dddcd7 solid;
-  cursor: pointer;
+article h1 {
+  font-weight: normal;
+  font-size: 40px;
+  border-bottom: solid 1px #dfded7;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-article .header {
-  font-size: 50px;
-  font-family: 'Poiret One', sans-serif;
-  padding-bottom: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #5f2b9b;
-  width: 100%;
-  background: white;
-  background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 80%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-  transition: width 0.5s, padding-left 0.5s, color 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+article {
+  line-height: 30px;
+  padding: 0 20px;
 }
 
-article.open .header,
-article .header-container:hover .header{
-  /*color: #E5BB31;*/
-  padding-top: 40px;
-  padding-bottom: 40px;
-  /*width: 70%;*/
-}
-
-article .header-container:hover .header{
-  padding-left: 20px;
-}
-
-article:last-child .header-container {
-  border-bottom: none 0px;
-}
-
-article.open:last-child .header-container {
-  border-bottom: 1px #dddcd7 solid;
-}
-
-article .content h2 {
-  font-family: 'Poiret One', sans-serif;
+footer h2 {
   font-weight: normal;
   font-size: 40px;
   margin-bottom: 10px;
-}
-
-article .content h2::before {
-  display: inline-block;
-  content: " ";
-  width: 20px;
-  height: 20px;
-  background-color: #f2d163;
-  margin-right: 20px;
-  position: relative;
-  top: -4px;
-}
-
-article .content {
-  font-size: 20px;
-  height: 0;
-  overflow: hidden;
-
-  transition: height 0.5s, margin 0.5s;
-}
-
-article.open .content {
-  display: block;
-  margin: 10px 0px 30px;
-  animation: accordionIn 1s;
-}
-
-article section {
-  overflow: auto;
-}
-
-article a {
-  text-decoration: none;
-  color: #5C94CA;
-
-  transition: color 0.5s;
-}
-
-article a:hover {
-  text-decoration: none;
-  color: #925ECD;
-}
-
-article .header {
-}
-
-.header-container.about {
-  background: url('../assets/duck.jpg');
-  background-size: 885px;
-  background-position: -390px -510px;
-}
-
-.header-container.workshop {
-  background: url('../assets/workshop2.jpg');
-  background-size: 700px;
-  background-position: right -280px;
-}
-
-.header-container.materials {
-  background: url('../assets/materials.jpg');
-  background-size: 700px;
-  background-position: right -20px;
-}
-
-.header-container.join{
-  background: url('../assets/more-ducks.jpg');
-  background-size: 900px;
-  background-position: -486px -523px;
+  padding: 20px;
+  margin-top: 0px;
 }
