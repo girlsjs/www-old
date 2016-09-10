@@ -73,7 +73,6 @@ body {
 
 header {
   background: white;
-  overflow: auto;
   position: fixed;
   height: 60px;
   width: 100%;
@@ -84,8 +83,7 @@ header {
 .logo {
   transform-origin: top left;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 10px;
   left: 10px;
 
   transition: transform 0.5s;
@@ -107,23 +105,23 @@ header {
   font-size: 35px;
 }
 
-header nav {
-  float: right;
-  text-align: right;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: none;
-}
 
 header .menu {
   display: block;
   float: right;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   text-decoration: none;
   color: #5c94ca;
   margin-right: 30px;
   font-size: 20px;
+}
+
+header nav {
+  float: right;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 header nav a {
@@ -140,12 +138,40 @@ header nav a:hover {
   color: #925ecd;
 }
 
+@media screen and (max-width: 760px) {
+  header nav {
+    position: absolute;
+    right: 70px;
+    top: 40px;
+    width: 180px;
+    background: white;
+    height: 180px;
+  }
+
+  header nav a {
+    display: block;
+    font-size: 18px;
+    height: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  header nav {
+    top: 50px;
+    right: 10px;
+  }
+}
+
 @media screen and (min-width: 472px) {
-  header {
+  .logo {
+    margin-top: 0px;
+    top: 0px;
   }
 
   header .menu {
     margin-right: 90px;
+    margin-top: 10px;
   }
 }
 
