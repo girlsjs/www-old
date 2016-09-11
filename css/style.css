@@ -277,6 +277,12 @@ article {
   margin: 0px 20px;
   line-height: 30px;
   padding: 0 20px;
+  overflow: auto;
+  display: none;
+}
+
+article.visible {
+  display: block;
 }
 
 article h1 {
