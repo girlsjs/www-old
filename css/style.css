@@ -88,6 +88,7 @@ header {
   margin-top: 10px;
 
   transition: transform 0.1s;
+  color: black;
 }
 
 .duck {
