@@ -237,6 +237,10 @@ footer h2 {
    text-decoration: none;
  }
 
+ nav a.active {
+   text-shadow: 0 0 20px #1a3651;
+ }
+
 
 @media screen and (min-width: 472px) {
   .menu-button {
@@ -304,3 +308,12 @@ article a {
   color: #5c94ca;
   text-decoration: none;
 }
+
+section.left, section.right {
+    display: inline-block;
+    width: 45%;
+    text-align: justify;
+    vertical-align: top;
+}
+
+section.left { margin-right: 9%; }
