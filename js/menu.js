@@ -4,7 +4,7 @@
     e.preventDefault()
 
     var link = e.currentTarget
-    var nextUrl = link.href.split('#')[1]
+    var nextUrl = 'page-' + link.href.split('#')[1]
 
     var prev = document.querySelector('article.visible')
 
