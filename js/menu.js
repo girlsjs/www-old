@@ -4,7 +4,8 @@
     e.preventDefault()
 
     var link = e.currentTarget
-    var nextUrl = 'page-' + link.href.split('#')[1]
+    var pagePrefix = 'page-'
+    var nextUrl = pagePrefix + link.href.split('#')[1]
 
     var prev = document.querySelector('article.visible')
 
@@ -13,7 +14,7 @@
     }
 
     prev.classList.remove('visible')
-    var prevLink = document.querySelector('a[href="#' + prev.id + '"]')
+    var prevLink = document.querySelector('a[href="#' + prev.id.substr(pagePrefix.length) + '"]')
     if (prevLink) {
       prevLink.classList.remove('active')
     }
