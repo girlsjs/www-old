@@ -4,8 +4,9 @@
     e.preventDefault()
 
     var link = e.currentTarget
+    var id = link.href.split('#')[1]
     var pagePrefix = 'page-'
-    var nextUrl = pagePrefix + link.href.split('#')[1]
+    var nextUrl = pagePrefix + id
 
     var prev = document.querySelector('article.visible')
 
@@ -22,6 +23,7 @@
     var next = document.getElementById(nextUrl)
     next.classList.add('visible')
     link.classList.add('active')
+    location.hash = id
   }
 
 
@@ -33,6 +35,9 @@
     links.forEach(function (link) {
       link.addEventListener("click", onClick)
     })
+    if (location.hash) {
+      document.querySelector('a[href="' + location.hash + '"]').click();
+    }
   }
 
 
