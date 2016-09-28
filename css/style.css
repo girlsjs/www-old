@@ -361,3 +361,13 @@ section.left, section.right {
     float: right;
   }
 }
+
+.fanpage {
+  line-height: 2.3em;
+}
+
+.fanpage a {
+  padding-left: 30px;
+  background-image: url('../assets/facebook.png');
+  background-repeat: no-repeat; 
+}
