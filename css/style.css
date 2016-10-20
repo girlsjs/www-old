@@ -163,7 +163,7 @@ header {
  */
 
 footer {
-  height: 300px;
+  /*height: 300px;*/
   position: relative;
   z-index: 2;
 }
@@ -183,9 +183,15 @@ footer {
 }
 
 footer .container {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+footer .partner-logos {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 footer h2 {
@@ -194,6 +200,11 @@ footer h2 {
   margin-bottom: 10px;
   padding: 20px;
   margin-top: 0px;
+}
+
+footer .container a {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 /*
