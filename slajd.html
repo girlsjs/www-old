@@ -1,13 +1,22 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width=1920, initial-scale=1">
         <title>girls.js</title>
         <meta charset="utf-8"/>
         <link href="https://fonts.googleapis.com/css?family=Poiret+One|Poppins:300" rel="stylesheet">
         <style type="text/css">
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         body {
             background-color: #f2d163;
             padding: 3%;
+            box-sizing: border-box;
+            height: 100%;
+            margin: 0;
         }
         #main {
             background-color: white;
@@ -16,8 +25,13 @@
             font-family: "Poiret One", sans-serif;
             font-size: 2em;
             line-height: 3em;
+            box-sizing: border-box;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
         }
-        #main > div { text-align: center; margin-bottom: 1em; }
+        #main > div { text-align: center; }
         #logo img { width: 10%; vertical-align: middle; }
         #logo { 
             font-size: 2em;
