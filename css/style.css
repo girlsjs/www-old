@@ -168,6 +168,10 @@ footer {
   z-index: 2;
 }
 
+.container {
+  display: flex;
+}
+
 @media screen and (min-width: 960px) {
   footer .container {
     width: 940px;
@@ -382,4 +386,11 @@ section.left, section.right {
   padding-left: 30px;
   background-image: url('../assets/facebook.png');
   background-repeat: no-repeat; 
+}
+
+.footer-partners {
+  flex: 2 1 auto;
+}
+.footer-venue {
+  flex: 1 1 auto;
 }
