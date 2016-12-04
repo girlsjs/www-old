@@ -9,6 +9,15 @@
   <link rel="icon" type="image/png" href="icon.png"/>
   <script type="text/javascript" src="js/scroll.js"></script>
   <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="/js/excanvas/excanvas.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/spinners/spinners.min.js"></script>
+  <script type="text/javascript" src="js/lightview/lightview.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/lightview/lightview.css"/>
+
 </head>
 <body>
   <div class="header-back"></div>
@@ -19,7 +28,7 @@
         <div class="menu">
           <div class="menu-button">M</div>
           <nav>
-            <!--<a href="#news">Aktualności</a>-->
+            <a href="#news">Aktualności</a>
             <a href="#workshop">Warsztaty</a>
             <a href="#join">Dołącz</a>
             <a href="#about">O nas</a>
@@ -44,7 +53,7 @@
             <h2>Kiedy?</h2>
             <p>19 listopada 2016r. w <a href="https://www.campus.co/warsaw/en">Google Campus Warsaw</a> odbyły się pierwsze, próbne warsztaty. Termin kolejnej edycji ogłosimy wkrótce!</p>
             <h2>Działo się!</h2>
-            <p><img src="assets/fotka_laptop_kaczka.jpg" style="width:100%"></p>
+            <p><a href="#news"><img src="assets/fotka_laptop_kaczka.jpg" style="width:100%"></a></p>
           </section>
         </article>
         <article id="page-workshop">
@@ -78,8 +87,6 @@
           <p><strong>Żółta Kaczuszka</strong> - szefowa zespołu. Doradczyni z wieloletnim stażem, absolwentka kursów coachingowych. Prywatnie małomówna, ale zawsze chętna do wysłuchiwania innych. Z jej usług można skorzystać <a href="http://duckie.me/">tutaj.</a></p>
           </section>
         </article>
-        <article id="page-news">
-        </article>
         <article id="page-join">
           <section class="left">
             <h2>Uczestniczki</h2>
@@ -98,6 +105,16 @@
           </section>
           <section class="right">
             <img src="assets/rubber_duck.jpg">
+          </section>
+        </article>
+        <article id="page-news">
+          <section class="left">
+            <!--<h2>Opis eventu</h2>-->
+            <p>9 uczestniczek, 3 trenerów, 9 godzin warsztatów, kilkadziesiąt kubków kawy i wszechobecne żółte kaczuszki. A atmosfera? Oceńcie sami! Oto zdjęcia z próbnej edycji girls.js, 19 listopada 2016 r. Dziękujemy sponsorom za wsparcie i wiarę w nasz pomysł, a warsztatowiczkom - za otwartość, perfekcyjne przygotowanie i maksymalną koncentrację. Nauczyliśmy się od Was co najmniej tyle samo, co wy od nas :) Do zobaczenia!</p>
+          </section>
+          <section class="right">
+            <!--<h2>Foty!</h2>-->
+            <p><a href="#" id="gallery" style="display: inline-block; overflow: hidden; height: 400px"><img src="assets/foto/okladkowe.jpg" style="width:100%"></a></p>
           </section>
         </article>
       </div>
@@ -128,5 +145,86 @@
         </div>
       </div>
     </footer>
+    <script>
+    document.querySelector("#gallery").addEventListener("click", function(e){
+      var photos = [
+{ url: "assets/foto/okladkowe.jpg", caption: "Autorka: Anna Juszkiewicz" },
+{ url: "assets/foto/Girlsjs-11.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-18.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-20.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-21.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-22.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-26.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-31.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-32.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-33.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-34.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-35.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-36.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-37.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-38.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-39.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-43.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-44.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-48.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-50.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-52.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-53.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-56.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-57.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-58.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-61.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-64.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-66.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-67.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-6.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-70.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-71.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-72.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-75.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-77.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-78.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-7.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-81.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-86.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-87.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-8.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-92.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-95.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/Girlsjs-98.jpg", caption: "Autorka: Anna Juszkiewicz" }, 
+{ url: "assets/foto/IMG_3560_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3562_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3574_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3579_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3581_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3586_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3587_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3589_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3592_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3596_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3597_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3598_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3600_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3602_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3613_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3614_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3637_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3653_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3667_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3670_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3677_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3685_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3692_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3699_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3702_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3710_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3717_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3744_girlsjs.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }, 
+{ url: "assets/foto/IMG_3776_girlsjs_2.jpg", caption: "Autorka: Katarzyna Niedźwiedzka" }       ];
+      Lightview.show(photos, { controls: 'thumbnails', skin: 'light' });
+      e.preventDefault();
+      return false;
+    });
+    </script>
 </body>
 </html>
