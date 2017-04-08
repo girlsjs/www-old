@@ -1,0 +1,11 @@
+.gallery-thumb {
+  width: 305px;
+  height: 208px;
+  display: inline-block;
+  background-size: cover;
+  margin: 24px 6px;
+}
+
+.gallery-preview {
+  margin-bottom: 36px;
+}

@@ -1,6 +1,7 @@
 @import "./top-bar.css";
 @import "./header.css";
 @import "./section.css";
+@import "./gallery.css";
 
 html,
 body {
@@ -16,12 +17,13 @@ body {
   margin: 0 auto;
 }
 
+
 .button,
 .button:visited {
   border-radius: 8px;
   padding: 9px 36px;
-  color: white;
-  border: solid 2px white;
+  color: #1b5f9e;
+  border: solid 2px #1b5f9e;
   font-size: 18px;
   text-decoration: none;
   text-transform: uppercase;

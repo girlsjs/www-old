@@ -18,11 +18,18 @@ section.content .heading-explanation {
 }
 
 article.col2 {
-  width: 44%;
+  width: 45%;
   box-sizing: border-box;
   display: inline-block;
-  margin: 2.5%;
   vertical-align: top;
+}
+
+article.col2.left {
+  margin-right: 4%;
+}
+
+article.col2.right {
+  margin-left: 4%;
 }
 
 article h3 {
@@ -33,6 +40,32 @@ article h3 {
   line-height: 42px;
 }
 
+article h3:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 240px;
+  height: 1px;
+  background: #8e8e8e;
+  top: 18px;
+  margin: 0 auto;
+}
+
+article.col2 h3 {
+  text-align: left;
+}
+
+article.col2 h3:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 240px;
+  height: 1px;
+  background: #8e8e8e;
+  top: 18px;
+  margin: 0 0;
+}
+
 article p {
   font-size: 16px;
   line-height: 24px;
@@ -40,8 +73,13 @@ article p {
   margin: 24px 0;
 }
 
-article p.first-p {
-  font-size: 20px;
+article p.intro {
+  font-size: 22px;
   color: #8f8f8f;
   font-style: italic;
+}
+
+
+section.editions {
+  text-align: center;
 }

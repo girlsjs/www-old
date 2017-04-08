@@ -43,7 +43,7 @@
 }
 
 .front-header .sub-heading {
-  margin-top: 12px;
+  margin: 18px 0 30px;
 }
 
 .front-header .heading {
@@ -73,6 +73,8 @@
 .front-header .button.secondary {
   display: inline-block;
   margin: 60px 6px 0;
+  color: white;
+  border: solid 2px white;
 }
 
 .front-header .more-buttons {
