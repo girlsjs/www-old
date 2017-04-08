@@ -14,3 +14,22 @@ body {
   width: 968px;
   margin: 0 auto;
 }
+
+.button,
+.button:visited {
+  border-radius: 8px;
+  padding: 9px 36px;
+  color: white;
+  border: solid 2px white;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.button.primary {
+  background: #ffc303;
+  border: none 0px;
+  text-shadow: 0 0 10px #9a9a9a;
+}
