@@ -14,3 +14,14 @@
   margin: 42px 0 30px;
   color: #3b3b3b;
 }
+
+
+@media screen and (max-width: 400px) {
+  .partner-fotokasia img {
+    width: 90%;
+  }
+
+  .partner-10clouds img {
+    width: 90%;
+  }
+}

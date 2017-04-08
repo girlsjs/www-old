@@ -130,6 +130,13 @@ article h3:after {
   top: 18px;
 }
 
+@media screen and (max-width: 600px) {
+  article h3:after {
+    width: 60%;
+  }
+}
+
+
 article.col2 h3 {
   text-align: left;
 }

@@ -44,6 +44,12 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 360px) {
+  .button {
+    padding: 6px;
+    font-size: 16px;
+  }
+}
 
 .button.primary {
   background: #ffc303;
