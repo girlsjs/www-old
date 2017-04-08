@@ -8,6 +8,14 @@
   position: relative;
 }
 
+.top-bar .logo {
+  width: 180px;
+  height: 68px;
+  background: url('../assets/kaczucha.png');
+  position: absolute;
+  top: 6px;
+}
+
 .main-menu {
   color: white;
   text-align: right;
