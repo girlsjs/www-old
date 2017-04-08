@@ -1,20 +1,40 @@
-section.content {
+.content {
   margin: 36px auto;
 }
 
-section.content > h2 {
-  color: #31536f;
+p a,
+p a:visited {
+  color: #fd991d;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: solid 1px transparent;
+
+  transition: border-bottom 0.4s;
+}
+
+p a:hover {
+  border-bottom: solid 1px #fd991d;
+}
+
+.content > h2 {
+  color: #275e96; /*#31536f;*/
   font-size: 42px;
   text-align: center;
   font-weight: 400;
   margin: 30px 0 6px;
+  text-transform: uppercase;
 }
 
-section.content .heading-explanation {
+.content .heading-explanation,
+p.explanation {
   color: #8d8d8d;
   text-align: center;
-  margin: 6px 0 6px;
   font-style: italic;
+  line-height: 24px;
+}
+
+.content .heading-explanation {
+  margin: 6px 0 6px;
 }
 
 article.col2 {
@@ -95,7 +115,7 @@ article p.intro {
 }
 
 
-section.editions {
+.editions {
   text-align: center;
   margin-bottom: 78px;
 }

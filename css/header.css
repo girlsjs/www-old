@@ -9,6 +9,8 @@
   height: 595px;
   position: absolute;
   background: url("../assets/header-photo.png");
+  /*background-position: 0 80px;
+  background-attachment: fixed;*/
   width: 100%;
   z-index: 1;
   filter: grayscale(100%);

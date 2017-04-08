@@ -22,3 +22,8 @@
 .gallery-preview {
   margin-bottom: 36px;
 }
+
+.button.gallery-open {
+  display: inline-block;
+  margin-bottom: 36px;
+}
