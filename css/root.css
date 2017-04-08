@@ -28,11 +28,24 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+
+  transition: background 0.4s, color 0.4s;
+}
+
+.button:hover {
+  background: #1b5f9e;
+  color: white;
 }
 
 
 .button.primary {
   background: #ffc303;
+  color: white;
   border: none 0px;
-  text-shadow: 0 0 10px #9a9a9a;
+  /*text-shadow: 0 0 10px #9a9a9a;*/
+}
+
+.button.primary:hover {
+  color: #ffc303;
+  background: white;
 }

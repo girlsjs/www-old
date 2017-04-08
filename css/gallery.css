@@ -2,8 +2,21 @@
   width: 305px;
   height: 208px;
   display: inline-block;
-  background-size: cover;
   margin: 24px 6px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery-thumb > div {
+  width: 305px;
+  height: 208px;
+  background-size: cover;
+
+  transition: transform 0.4s;
+}
+
+.gallery-thumb:hover > div {
+  transform: scale(1.2);
 }
 
 .gallery-preview {

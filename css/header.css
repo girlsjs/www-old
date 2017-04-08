@@ -77,6 +77,11 @@
   border: solid 2px white;
 }
 
+.front-header .button.secondary:hover {
+  background: white;
+  color: #1b5f9e;
+}
+
 .front-header .more-buttons {
   text-align: center;
 }
