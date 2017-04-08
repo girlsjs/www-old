@@ -2,7 +2,7 @@
   width: 305px;
   height: 208px;
   display: inline-block;
-  margin: 24px 6px;
+  margin: 6px;
   cursor: pointer;
   overflow: hidden;
 }
@@ -20,10 +20,15 @@
 }
 
 .gallery-preview {
-  margin-bottom: 36px;
+  margin: 36px 0;
+  text-align: center;
 }
 
 .button.gallery-open {
   display: inline-block;
   margin-bottom: 36px;
+}
+
+.gallery-button {
+  text-align: center;
 }

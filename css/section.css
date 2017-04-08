@@ -52,6 +52,36 @@ article.col2.right {
   margin-left: 4%;
 }
 
+@media screen and (max-width: 786px) {
+  article.col2 {
+    width: 47%;
+  }
+
+  article.col2.left {
+    margin-right: 2%;
+  }
+
+  article.col2.right {
+    margin-left: 2%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  article.col2 {
+    width: 100%;
+  }
+
+  article.col2.left {
+    margin-right: 0;
+  }
+
+  article.col2.right {
+    margin-left: 0;
+  }
+
+}
+
 article.col3 {
   width: 30%;
   box-sizing: border-box;
@@ -65,6 +95,21 @@ article.col3.left {
 
 article.col3.right {
   margin-left: 4%;
+}
+
+
+@media screen and (max-width: 786px) {
+  article.col3 {
+    width: 100%;
+  }
+
+  article.col3.left {
+    margin-right: 0;
+  }
+
+  article.col3.right {
+    margin-left: 0;
+  }
 }
 
 article h3 {
@@ -83,7 +128,6 @@ article h3:after {
   height: 1px;
   background: #8e8e8e;
   top: 18px;
-  margin: 0 auto;
 }
 
 article.col2 h3 {
@@ -94,12 +138,13 @@ article.col2 h3:after {
   content: "";
   display: block;
   position: relative;
-  width: 240px;
+  width: 60%;
   height: 1px;
   background: #8e8e8e;
   top: 18px;
   margin: 0 0;
 }
+
 
 article p {
   font-size: 16px;
@@ -118,4 +163,18 @@ article p.intro {
 .editions {
   text-align: center;
   margin-bottom: 78px;
+}
+
+.editions h3:after {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .editions {
+    text-align: left;
+  }
+
+  .editions h3:after {
+    margin: 0;
+  }
 }

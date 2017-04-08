@@ -19,6 +19,11 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1000px) {
+  .content {
+    width: 80%
+  }
+}
 
 .button,
 .button:visited {

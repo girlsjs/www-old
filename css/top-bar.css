@@ -12,8 +12,8 @@
   width: 180px;
   height: 68px;
   background: url('../assets/kaczucha.png');
-  position: absolute;
-  top: 6px;
+  float: left;
+  margin-top: 6px;
 }
 
 .main-menu {
@@ -38,10 +38,29 @@
   background: #5c5c5c;
 }
 
+@media screen and (max-width: 910px) {
+  .main-menu {
+    display: none;
+    width: 120px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    background: #3b3b3b;
+    z-index: 100;
+    top: 80px;
+  }
+
+  .main-menu a {
+    display: block;
+    padding: 10px;
+    height: auto;
+  }
+}
+
 .contact-menu {
   position: absolute;
-  right: -12%;
-  top: 20px;
+  right: -150px;
+  top: 18px;
 }
 
 .contact-menu a {
@@ -56,4 +75,12 @@
 }
 .contact-menu .mail {
   background: url('../assets/top-mail.png');
+}
+
+@media screen and (max-width: 1275px) {
+  .contact-menu {
+    position: static;
+    float: right;
+    margin-top: 18px;
+  }
 }
