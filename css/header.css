@@ -9,8 +9,7 @@
   height: 595px;
   position: absolute;
   background: url("../assets/header-photo.png");
-  /*background-position: 0 80px;
-  background-attachment: fixed;*/
+  background-attachment: fixed;
   width: 100%;
   z-index: 1;
   filter: grayscale(100%);
@@ -25,6 +24,7 @@
   width: 100%;
   position: absolute;
   background: url("../assets/header-mosaic.png");
+  background-attachment: fixed;
 }
 
 .front-header .content {
