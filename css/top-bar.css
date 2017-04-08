@@ -1,0 +1,51 @@
+.top-bar {
+  background: #3b3b3b;
+  height: 80px;
+  position: relative;
+}
+
+.top-bar .content {
+  position: relative;
+}
+
+.main-menu {
+  color: white;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.main-menu a,
+.main-menu a:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 80px;
+  padding: 30px 1.7%;
+  box-sizing: border-box;
+}
+
+.main-menu a:hover {
+  background: #5c5c5c;
+}
+
+.contact-menu {
+  position: absolute;
+  right: -12%;
+  top: 20px;
+}
+
+.contact-menu a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin: 10px;
+}
+
+.contact-menu .fb {
+  background: url('../assets/top-fb.png');
+}
+.contact-menu .mail {
+  background: url('../assets/top-mail.png');
+}

@@ -1,0 +1,14 @@
+@import "./top-bar.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: "Lato", sans-serif;
+}
+
+.content {
+  width: 968px;
+  margin: 0 auto;
+}
