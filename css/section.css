@@ -166,6 +166,14 @@ article p.intro {
   font-style: italic;
 }
 
+@media screen and (max-width: 425px) {
+  article p,
+  article p.intro,
+  article p.explanation {
+    text-align: justify;
+  }
+}
+
 
 .editions {
   text-align: center;
