@@ -32,6 +32,21 @@ article.col2.right {
   margin-left: 4%;
 }
 
+article.col3 {
+  width: 30%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+
+article.col3.left {
+  margin-right: 4%;
+}
+
+article.col3.right {
+  margin-left: 4%;
+}
+
 article h3 {
   font-size: 32px;
   font-weight: 400;
@@ -82,4 +97,5 @@ article p.intro {
 
 section.editions {
   text-align: center;
+  margin-bottom: 78px;
 }

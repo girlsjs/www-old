@@ -1,0 +1,30 @@
+.faq-wrapper {
+  background: #f2f2f2;
+  overflow: auto;
+}
+
+.faq article h3 {
+  font-size: 24px;
+  color: #3b3b3b;
+  margin-bottom: 18px;
+  line-height: 30px;
+}
+
+.faq article h3 > span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  background: #275e96;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 12px;
+  position: relative;
+  top: -2px;
+}
+
+.faq article h3:after {
+  content: none;
+}
