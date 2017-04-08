@@ -10,6 +10,7 @@
   position: absolute;
   background: url("../assets/header-photo.png");
   background-attachment: fixed;
+  background-position: top center;
   width: 100%;
   z-index: 1;
   filter: grayscale(100%);
