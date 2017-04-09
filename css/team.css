@@ -1,0 +1,42 @@
+.team .heading-explanation {
+  margin-bottom: 42px;
+}
+
+.team h4 {
+  margin: 6px 0 6px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-left: 156px;
+}
+
+.team p {
+  margin-top: 6px;
+  margin-left: 156px;
+}
+
+.team img {
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+  border: solid 3px #eee;
+  float: left;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px),
+screen and (max-width: 425px) {
+  .team h4 {
+    text-align: center;
+  }
+
+  .team p,
+  .team h4 {
+    margin-left: 0;
+  }
+
+  .team img {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+}
