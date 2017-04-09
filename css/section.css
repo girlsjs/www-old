@@ -175,21 +175,25 @@ article p.intro {
 }
 
 
-.editions {
+.editions,
+.media {
   text-align: center;
   margin-bottom: 78px;
 }
 
-.editions h3:after {
+.editions h3:after,
+.media h3:after {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
-  .editions {
+  .editions,
+  .media {
     text-align: left;
   }
 
-  .editions h3:after {
+  .editions h3:after,
+  .media h3:after {
     margin: 0;
   }
 }
