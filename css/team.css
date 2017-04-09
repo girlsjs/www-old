@@ -21,6 +21,13 @@
   border-radius: 64px;
   border: solid 3px #eee;
   float: left;
+
+  transition: border-radius 0.6s, transform 0.6s;
+}
+
+.team img:hover {
+  border-radius: 0px;
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px),
