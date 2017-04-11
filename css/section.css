@@ -58,6 +58,12 @@ article.col2.right {
   margin-left: 4%;
 }
 
+article.col2.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 @media screen and (max-width: 786px) {
   article.col2 {
     width: 47%;
@@ -84,6 +90,11 @@ article.col2.right {
 
   article.col2.right {
     margin-left: 0;
+  }
+
+  article.col2.center {
+    margin-left: 0;
+    margin-right: 0;
   }
 
 }
