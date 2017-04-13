@@ -7,19 +7,13 @@ p a:visited {
   color: #fd991d;
   text-decoration: none;
   cursor: pointer;
-  border-bottom: solid 1px transparent;
-  display: inline-block;
-  margin-left: 0;
-  margin-right: 0;
+  letter-spacing: 0;
 
-  transition: margin-left 0.6s, margin-right 0.6s, transform 0.6s;
+  transition: letter-spacing 0.6s;
 }
 
 p a:hover {
-  /*border-bottom: solid 1px #fd991d;
-  transform: scale(1.2);
-  margin-left: 6px;
-  margin-right: 6px;*/
+  letter-spacing: 1px;
 }
 
 .content > h2 {
