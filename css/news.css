@@ -1,38 +1,49 @@
-.posts {
-  margin: 36px 0 18px;
+.news-container {
+  margin: 36px 0 0;
   text-align: center;
 }
 
-.post {
+.news {
   display: inline-block;
   vertical-align: top;
   width: 305px;
   text-decoration: none;
-  background: #f2f2f2;
-  margin: 18px 12px 24px;
+  background: #ffffff;
+  margin: 18px 8px 24px;
   text-align: center;
+  border: solid 1px #eee;
 
   transition: transform 0.6s;
 }
 
-.post:hover {
+.news:hover {
   transform: scale(1.07);
 }
 
+@media screen and (min-width: 999px) {
+  .news:first-child {
+    margin-left: 0;
+  }
+
+  .news:last-child {
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 826px) {
-  .post {
+  .news {
     margin: 12px 12px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .post {
+  .news {
     width: 260px;
     margin: 12px 0;
   }
 }
 
-.post img {
+.news img {
   width: 305px;
   height: 265px;
   display: block;
@@ -40,13 +51,13 @@
 }
 
 @media screen and (max-width: 425px) {
-  .post img {
+  .news img {
     width: 260px;
     height: 225px;
   }
 }
 
-.post .title {
+.news .title {
   text-transform: uppercase;
   color: #3b3b3b;
   line-height: 24px;
@@ -54,7 +65,7 @@
   margin: 24px 0 6px;
 }
 
-.post .date {
+.news .date {
   color: #4c4c4c;
   line-height: 18px;
   font-size: 16px;
@@ -62,12 +73,12 @@
 }
 
 @media screen and (max-width: 826px) {
-  .post .date {
+  .news .date {
     margin-bottom: 18px;
   }
 }
 
-.post .date:after {
+.news .date:after {
   content: "";
   display: block;
   position: relative;
@@ -79,12 +90,12 @@
 }
 
 @media screen and (max-width: 826px) {
-  .post .date:after {
+  .news .date:after {
     content: none;
   }
 }
 
-.post p {
+.news p {
   color: #8e8e8e;
   font-style: italic;
   margin-left: 18px;
@@ -92,7 +103,12 @@
 }
 
 @media screen and (max-width: 826px) {
-  .post p {
+  .news p {
     display: none;
   }
+}
+
+.read-more {
+  text-align: right;
+  margin-bottom: 24px;
 }

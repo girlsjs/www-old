@@ -3,7 +3,9 @@
 }
 
 p a,
-p a:visited {
+.link,
+p a:visited,
+.link:visited {
   color: #fd991d;
   text-decoration: none;
   cursor: pointer;
@@ -12,7 +14,8 @@ p a:visited {
   transition: letter-spacing 0.6s;
 }
 
-p a:hover {
+p a:hover,
+.link:hover {
   letter-spacing: 1px;
 }
 
