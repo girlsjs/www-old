@@ -55,14 +55,33 @@
 }
 
 .laptop {
-  background: url("../assets/laptop-shadow.png") no-repeat center right;
+  background: url("../assets/laptop-shadow-no-download.png") no-repeat top right;
   background-size: contain;
   width: 50%;
   height: 364px;
   float: right;
-  right: 0;
-  top: 90px;
+  position: relative;
+  top: 36px;
 }
+
+
+.laptop::before {
+  content: "";
+  width: 20%;
+  height: 135px;
+  background: url("../assets/download.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -10px;
+  left: 3%;
+}
+
+@media screen and (max-width: 1000px) {
+  .laptop {
+    top: 60px;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .laptop {
@@ -73,10 +92,16 @@
 @media screen and (max-width: 640px) {
   .laptop {
     float: none;
-    width: 50%;
-    margin: 0 24.5%;
-    height: 30vw;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    height: 210px;
     background-position: center center;
+    top: 0px;
+  }
+
+  .laptop::before {
+    top: 8px;
   }
 }
 
