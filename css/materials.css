@@ -1,0 +1,74 @@
+.materials {
+  position: relative;
+}
+
+.main-file {
+  width: 39%;
+  margin-right: 63%;
+  margin-left: 7%;
+  text-align: right;
+}
+
+.main-file h4 {
+  padding-top: 60px;
+}
+
+.main-file p {
+  color: #686868;
+  padding-bottom: 69px;
+  background: url("../assets/szczalka.png") no-repeat bottom right;
+  margin-top: 6px;
+}
+
+.laptop {
+  background: url("../assets/laptop-shadow.png") no-repeat center right;
+  background-size: contain;
+  width: 50%;
+  height: 334px;
+  float: right;
+  right: 0;
+  top: 90px;
+}
+
+.laptop::before {
+  content: "";
+  width: 105px;
+  height: 135px;
+  background: url("../assets/download.png") no-repeat;
+  position: absolute;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.file {
+  background: #f2f2f2;
+  border: solid 1px #d8d8d8;
+  position: relative;
+  margin: 60px 0px 84px;
+}
+
+.file::before {
+  content: "";
+  width: 105px;
+  height: 135px;
+  background: url("../assets/download.png") no-repeat;
+  position: absolute;
+  top: -40px;
+  left: -20px;
+}
+
+.file h5 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 6px;
+  color: #686868;
+  margin-left: 100px;
+}
+
+.file p {
+  margin: 6px;
+  color: #8c8c8c;
+  margin-left: 100px;
+}

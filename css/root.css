@@ -3,6 +3,7 @@
 @import "./section.css";
 @import "./gallery.css";
 @import "./faq.css";
+@import "./materials.css";
 @import "./partners.css";
 @import "./media.css";
 @import "./news.css";
@@ -20,6 +21,7 @@ body {
 .content {
   width: 968px;
   margin: 0 auto;
+  clear: both;
 }
 
 @media screen and (max-width: 1000px) {
