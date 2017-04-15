@@ -9,8 +9,22 @@
   text-align: right;
 }
 
+@media screen and (max-width: 640px) {
+  .main-file {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .main-file h4 {
   padding-top: 60px;
+}
+
+@media screen and (max-width: 640px) {
+  .main-file h4 {
+    padding-top: 6px;
+  }
 }
 
 .main-file p {
@@ -18,6 +32,26 @@
   padding-bottom: 69px;
   background: url("../assets/szczalka.png") no-repeat bottom right;
   margin-top: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-file p {
+    padding-bottom: 12px;
+    background: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main-file p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-file p {
+    margin-bottom: 18px;
+  }
 }
 
 .laptop {
@@ -30,9 +64,37 @@
   top: 90px;
 }
 
+@media screen and (max-width: 768px) {
+  .laptop {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .laptop {
+    float: none;
+    width: 50%;
+    margin: 0 24.5%;
+    height: 30vw;
+    background-position: center center;
+  }
+}
+
 .more-files {
   padding-top: 60px;
   padding-bottom: 84px;
+}
+
+@media screen and (max-width: 640px) {
+  .more-files {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .more-files {
+    padding-top: 12px;
+  }
 }
 
 .file {
@@ -40,6 +102,13 @@
   border: solid 1px #d8d8d8;
   position: relative;
   padding-left: 20%
+}
+
+@media screen and (max-width: 600px) {
+  .file {
+    margin: 20px 0;
+    padding-left: 14%
+  }
 }
 
 .file::before {
@@ -51,6 +120,13 @@
   position: absolute;
   top: -20px;
   left: -5%;
+}
+
+@media screen and (max-width: 600px) {
+  .file::before {
+    width: 18%;
+    height: 100px;
+  }
 }
 
 .file h5 {
