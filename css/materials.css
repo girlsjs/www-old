@@ -24,39 +24,33 @@
   background: url("../assets/laptop-shadow.png") no-repeat center right;
   background-size: contain;
   width: 50%;
-  height: 334px;
+  height: 364px;
   float: right;
   right: 0;
   top: 90px;
 }
 
-.laptop::before {
-  content: "";
-  width: 105px;
-  height: 135px;
-  background: url("../assets/download.png") no-repeat;
-  position: absolute;
-}
-
-.clearfix {
-  clear: both;
+.more-files {
+  padding-top: 60px;
+  padding-bottom: 84px;
 }
 
 .file {
   background: #f2f2f2;
   border: solid 1px #d8d8d8;
   position: relative;
-  margin: 60px 0px 84px;
+  padding-left: 20%
 }
 
 .file::before {
   content: "";
-  width: 105px;
+  width: 22%;
   height: 135px;
   background: url("../assets/download.png") no-repeat;
+  background-size: contain;
   position: absolute;
-  top: -40px;
-  left: -20px;
+  top: -20px;
+  left: -5%;
 }
 
 .file h5 {
@@ -64,11 +58,9 @@
   font-weight: normal;
   margin: 6px;
   color: #686868;
-  margin-left: 100px;
 }
 
 .file p {
   margin: 6px;
   color: #8c8c8c;
-  margin-left: 100px;
 }

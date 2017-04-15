@@ -18,6 +18,10 @@ body {
   font-size: 16px;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .content {
   width: 968px;
   margin: 0 auto;
