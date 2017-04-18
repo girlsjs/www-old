@@ -112,3 +112,36 @@
   text-align: right;
   margin-bottom: 24px;
 }
+
+.news-more {
+  display: none;
+}
+
+.news-arrow-more {
+  color: #fd991d;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0;
+  transition: letter-spacing 0.6s;
+}
+
+#lighttextbox {
+  display: none;
+  position: fixed;
+  top: 10%; left: 30%;
+  width: 40%;
+  height: 60%;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
+}
+
+#lighttextbox::after {
+  content: "❌";
+  position: absolute;
+  top: 0; right: 5px;
+  cursor: pointer;
+}
+
+#lighttextbox img { float: right; margin-left: 10px; }
+#lighttextbox .title { font-size: 1.2em; }

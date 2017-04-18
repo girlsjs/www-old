@@ -76,6 +76,15 @@
   left: 3%;
 }
 
+.main-file a::before {
+  content: "";
+  width: 90px;
+  height: 114px;
+  position: absolute;
+  top: 115px;
+  right: 376px;
+}
+
 @media screen and (max-width: 1000px) {
   .laptop {
     top: 60px;
@@ -164,4 +173,18 @@
 .file p {
   margin: 6px;
   color: #8c8c8c;
+}
+
+.materials a {
+    text-decoration: none;
+    color: #fd991d;
+}
+
+.file a::before {
+  content: "";
+  width: 22%;
+  height: 135px;
+  position: absolute;
+  top: -20px;
+  left: -5%;  
 }
