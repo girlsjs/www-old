@@ -1,6 +1,7 @@
 .news-container {
   margin: 36px 0 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .news {
