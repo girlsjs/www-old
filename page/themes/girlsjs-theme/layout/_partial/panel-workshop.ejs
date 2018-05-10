@@ -1,0 +1,27 @@
+<div class="panel" id="workshops">
+  <section class="content workshops">
+    <h1>Warsztaty</h1>
+    <div class="entry-meta">Ale o co właściwie chodzi?</div>
+
+    <% page.posts.filter(function(item) {
+      var data = item.categories.data
+      return (data.length && data[0].name === 'panel-workshop')
+     }).each(function(item){ %>
+
+      <article id="post-50" class="col2 left post-50 about type-about status-publish hentry">
+        <h2 class="entry-title"><%- item.title %></h2>
+        <div class="intro">
+          <p>
+            <%- item.description %>
+          </p>
+        </div>
+        <div class="entry-main-content">
+          <p>
+            <%- item.content %>
+          </p>
+        </div>
+      </article>
+
+    <% }); %>
+  </section>
+</div>

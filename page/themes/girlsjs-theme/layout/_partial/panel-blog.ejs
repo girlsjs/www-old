@@ -1,0 +1,42 @@
+<div class="panel" id="news">
+  <section class="content news-wrapper">
+    <a name="news"></a>
+    <h1>Co u nas</h1>
+    <div class="news-container">
+
+      <% page.posts.filter(function(item) {
+        var data = item.categories.data
+        return (data.length && data[0].name === 'blog')
+       }).each(function(item){ %>
+
+        <article class="news">
+          <a href="<%- config.root %><%- item.path %>" rel="bookmark">
+            <img src="<%- config.root %>images/<%- item.image %>"/>
+            <h3 class="title entry-title">
+              <%= item.title %>
+            </h3>
+          </a>
+          <div class="date entry-meta">
+            <a href="<%- config.root %><%- item.path %>" rel="bookmark">
+              <%= item.date.format(config.date_format) %>
+            </a>
+          </div>
+          <div class="entry-content">
+            <p>
+              <%- item.description %>
+              <a href="<%- config.root %><%- item.path %>" class="more-link link">
+                Czytaj dalej
+                <span class="meta-nav">→</span>
+              </a>
+            </p>
+          </div>
+        </article>
+
+      <% }); %>
+
+    </div>
+    <div class="gallery-button">
+      <a href="<%- config.root %>categories/blog/" class="button">Wszystkie wpisy</a>
+    </div>
+  </section>
+</div>

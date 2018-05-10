@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html <% if(config.language) { %>lang="<%= config.language %>"<% } else { %>lang="en"<% }%>>
+
+<!-- Head tag -->
+<%- partial('_partial/head') %>
+
+<body>
+  <div id="page" class="site">
+
+  	<header id="masthead" class="site-header top-bar" role="banner">
+      <div class="content">
+
+    		<div class="site-branding">
+    		  <a href="https://girlsjs.pl/" class="custom-logo-link" rel="home" itemprop="url">
+            <img width="180" height="68" src="https://i1.wp.com/girlsjs.pl/wp-content/uploads/2017/04/kaczucha.png?fit=180%2C68&amp;ssl=1" class="custom-logo" alt="Girls.js" itemprop="logo" data-attachment-id="42" />
+          </a>
+        </div>
+
+        <nav class="contact-menu">
+          <a href="https://www.facebook.com/girlsjs" class="fb"></a>
+          <a href="mailto:kontakt@girlsjs.pl" class="mail"></a>
+        </nav>
+    		<nav id="site-navigation" class="main-menu" role="navigation">
+  			  <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
+          <div class="menu-menu-glowne-container">
+            <ul id="primary-menu" class="menu">
+              <li id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-181">
+                <a href="#workshops">Warsztaty</a>
+              </li>
+              <li id="menu-item-80" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80">
+                <a href="#news">Co u nas</a>
+              </li>
+              <li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78">
+                <a href="#faq">FAQ</a>
+              </li>
+              <li id="menu-item-219" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-219">
+                <a href="#materials">Materiały</a>
+              </li>
+              <li id="menu-item-79" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-79">
+                <a href="#team">Zespół</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+       </div>
+  	</header>
+
+  	<div id="content" class="site-content">
+
+      <%- body %>
+
+    </div>
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+  		<div class="site-info">
+  			© 2018 girls.js
+  		</div>
+  	</footer>
+  </div>
+
+</body>
+
+</html>

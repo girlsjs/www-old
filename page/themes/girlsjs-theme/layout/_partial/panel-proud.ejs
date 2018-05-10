@@ -1,0 +1,47 @@
+<%
+  var panel = page.posts.filter(function(item) {
+    var catData = item.categories.data
+    return (catData.length && catData[0].name === 'panel-proud')
+  });
+
+  var data = panel.data[0]
+%>
+
+<div class="panel" id="summary">
+  <div class="summary-wrapper">
+    <section class="content">
+      <article>
+        <div class="chinese-duck"></div>
+        <h3>
+          <span><%- data.title %></span>
+        </h3>
+        <div class="summary-box">
+          <div class="summary-item">
+            <div class="count"><%- data.cities %></div>
+            <div class="title">miasta</div>
+          </div>
+          <div class="summary-border"></div>
+          <div class="summary-item">
+            <div class="count"><%- data.editions %></div>
+            <div class="title">edycji</div>
+          </div>
+          <div class="summary-border"></div>
+          <div class="summary-item">
+            <div class="count"><%- data.trainers %></div>
+            <div class="title">prowadzących</div>
+          </div>
+          <div class="summary-border"></div>
+          <div class="summary-item">
+            <div class="count"><%- data.hours %></div>
+            <div class="title">godziny zajęć</div>
+          </div>
+          <div class="summary-border"></div>
+          <div class="summary-item">
+            <div class="count"><%- data.attendees %></div>
+            <div class="title">uczestniczek</div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
