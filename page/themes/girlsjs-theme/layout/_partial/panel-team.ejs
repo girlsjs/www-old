@@ -1,0 +1,30 @@
+<div class="panel grey" id="team">
+  <section class="content team">
+    <a name="team"></a>
+    <h1>Zespół</h1>
+    <div class="entry-meta">Kto odpowiada za całe zamieszanie</div>
+    <div class="team-items">
+      <% var posts = page.posts.filter(function(item) {
+          var data = item.categories.data
+          return (data.length && data[0].name === 'panel-team')
+        });
+
+        posts.data.reverse();
+        posts.each(function(item){
+      %>
+
+        <article id="post-54" class="col2 team type-team">
+          <h4 class="entry-title"><%- item.title %></h4>
+          <img src="<%- config.root %>images/team/<%- item.image %>"/>
+          <div class="entry-main-content">
+            <%- item.content %>
+          </div>
+        </article>
+
+
+      <% }); %>
+      <!-- #post-## -->
+
+    </div>
+  </section>
+</div>
