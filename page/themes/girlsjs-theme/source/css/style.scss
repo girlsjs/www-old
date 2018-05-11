@@ -19,6 +19,7 @@ body {
   }
 }
 
+@import './panel-faq.scss';
 
 .site-main a,
 .link,
@@ -474,50 +475,6 @@ article p {
 }
 
 
-
-
-/*--------------------------------------------------------------
-## FAQ
---------------------------------------------------------------*/
-
-.faq-wrapper {
-  background: #f2f2f2;
-  overflow: auto;
-}
-
-.faq article h3 {
-  font-size: 24px;
-  color: #3b3b3b;
-  margin-bottom: 18px;
-  line-height: 30px;
-}
-
-.faq article h3:before {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 15px;
-  background: #275e96;
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  margin-right: 12px;
-  position: relative;
-  top: -2px;
-}
-
-#faq { counter-reset: faq-counter; }
-
-.faq article h3:before {
-  counter-increment: faq-counter;
-  content: counter(faq-counter);
-}
-
-.faq article h3:after {
-  content: none;
-}
-
 /*--------------------------------------------------------------
 ## Gallery
 --------------------------------------------------------------*/
@@ -871,6 +828,12 @@ article p {
 .news-container {
   margin: 36px 0 0;
   text-align: center;
+}
+
+@media screen and (max-width: 826px) {
+  .news-container {
+    margin-bottom: 24px;
+  }
 }
 
 .news {

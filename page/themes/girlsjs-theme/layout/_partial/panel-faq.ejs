@@ -1,0 +1,29 @@
+
+<div class="panel grey" id="faq">
+  <section class="content faq">
+    <a name="faq"></a>
+    <h1>FAQ</h1>
+    <div class="entry-meta">Pytania i odpowiedzi</div>
+    <div class="faq-items">
+      <% var posts = page.posts.filter(function(item) {
+          var data = item.categories.data
+          return (data.length && data[0].name === 'panel-faq')
+        });
+
+        console.log(posts.data.reverse());
+        posts.each(function(item){
+      %>
+
+        <article class="faq type-faq faq-col-<%- item.columns %>">
+          <h3 class="entry-title"><%- item.title %><h3>
+          <div class="entry-main-content">
+            <%- item.content %>
+          </div>
+        </article>
+
+      <% }); %>
+      <!-- #post-## -->
+
+    </div>
+  </section>
+</div>
