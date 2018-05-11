@@ -21,9 +21,15 @@ body {
 
 @import './panel-faq.scss';
 
+@import './gallery.scss';
+
 .site-main a,
-.link,
 .site-main a:visited,
+.content a,
+.content a:visited,
+.site-footer a,
+.site-footer a:visited,
+.link,
 .link:visited {
   color: #fd991d;
   text-decoration: none;
@@ -34,8 +40,9 @@ body {
 }
 
 .site-main p a:hover,
+.content a:hover,
 .link:hover {
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 a.button,
@@ -1013,6 +1020,8 @@ article .file p {
 .partner-logos {
   text-align: center;
   margin-bottom: 30px;
+  border: solid 2px #f3f3f3;
+  border-radius: 12px;
 }
 
 .partner-logos a {
@@ -1232,6 +1241,18 @@ screen and (max-width: 425px) {
   margin-bottom: 18px;
 }
 
+.site-footer img {
+  height: 18px;
+  width: 18px;
+  vertical-align: text-bottom;
+  margin: 0 6px;
+}
+
+.site-footer .spacer {
+  margin: 0 12px;
+  opacity: 0.3;
+}
+
 .panel {
   overflow: auto;
 }
@@ -1254,7 +1275,6 @@ screen and (max-width: 425px) {
 .news a,
 .news .entry-meta a {
   text-decoration: none;
-  color: #2b2b2b;
 }
 
 .news h3.entry-title:after{

@@ -11,7 +11,7 @@
       <div class="content">
 
     		<div class="site-branding">
-    		  <a href="https://girlsjs.pl/" class="custom-logo-link" rel="home" itemprop="url">
+    		  <a href="<%- config.root %>" class="custom-logo-link" rel="home" itemprop="url">
             <img width="180" height="68" src="https://i1.wp.com/girlsjs.pl/wp-content/uploads/2017/04/kaczucha.png?fit=180%2C68&amp;ssl=1" class="custom-logo" alt="Girls.js" itemprop="logo" data-attachment-id="42" />
           </a>
         </div>
@@ -51,9 +51,12 @@
     </div>
 
     <footer id="colophon" class="site-footer" role="contentinfo">
-  		<div class="site-info">
-  			© 2018 girls.js
-  		</div>
+      Powered by
+      <a href="https://hexo.io/">
+        <img src="https://hexo.io/logo.svg" /> Hexo
+      </a>
+      <span class="spacer">|</span>
+      © 2018 <img src="<%- config.root %>images/favicon.png" /> girls.js
   	</footer>
   </div>
 
