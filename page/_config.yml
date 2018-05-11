@@ -79,3 +79,8 @@ theme: girlsjs-theme
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+node_sass:
+  outputStyle: nested
+  precision: 4
+  sourceComments: false
