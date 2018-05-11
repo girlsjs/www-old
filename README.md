@@ -23,7 +23,7 @@ Based on [hexo](http://https://hexo.io/).
 - [x] faq
 - [ ] materials (now only static)
 - [x] team
-- [ ] partners
+- [x] partners
 
 ### Improvements
 
