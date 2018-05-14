@@ -7,10 +7,10 @@
         var path = config.root + 'images/gallery/' + dir + '/';
     %>
       <div class="gallery-collage">
-        <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[0] %>)"></div>
-        <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[1] %>)"></div>
-        <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[2] %>)"></div>
-        <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[3] %>)"></div>
+        <div class="gallery-collage-img" style="background-image: url(<%- path %><%- item.collage[0] %>)"></div>
+        <div class="gallery-collage-img" style="background-image: url(<%- path %><%- item.collage[1] %>)"></div>
+        <div class="gallery-collage-img" style="background-image: url(<%- path %><%- item.collage[2] %>)"></div>
+        <div class="gallery-collage-img" style="background-image: url(<%- path %><%- item.collage[3] %>)"></div>
       </div>
     <% } else if (item.image) { %>
       <img src="<%- config.root %>images/<%- item.image %>"/>
