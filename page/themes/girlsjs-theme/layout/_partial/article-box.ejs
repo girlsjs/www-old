@@ -1,0 +1,37 @@
+<article class="news">
+  <a href="<%- config.root %><%- item.path %>" rel="bookmark">
+
+    <%
+      if (item.collage && item.collage.length === 4) {
+        var dir = item.directory || '';
+        var path = config.root + 'images/gallery/' + dir + '/';
+    %>
+      <div class="gallery-collage">
+        <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[0] %>)"></div>
+        <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[1] %>)"></div>
+        <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[2] %>)"></div>
+        <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[3] %>)"></div>
+      </div>
+    <% } else if (item.image) { %>
+      <img src="<%- config.root %>images/<%- item.image %>"/>
+    <% } %>
+
+    <h3 class="title entry-title">
+      <%= item.title %>
+    </h3>
+  </a>
+  <div class="date entry-meta">
+    <a href="<%- config.root %><%- item.path %>" rel="bookmark">
+      <%= item.date.format(config.date_format) %>
+    </a>
+  </div>
+  <div class="entry-content">
+    <p>
+      <%- item.description %>
+      <a href="<%- config.root %><%- item.path %>" class="more-link link">
+        Czytaj dalej
+        <span class="meta-nav">→</span>
+      </a>
+    </p>
+  </div>
+</article>

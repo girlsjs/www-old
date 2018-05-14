@@ -12,28 +12,7 @@
        .slice(0, 3)
        .each(function(item){ %>
 
-        <article class="news">
-          <a href="<%- config.root %><%- item.path %>" rel="bookmark">
-            <img src="<%- config.root %>images/<%- item.image %>"/>
-            <h3 class="title entry-title">
-              <%= item.title %>
-            </h3>
-          </a>
-          <div class="date entry-meta">
-            <a href="<%- config.root %><%- item.path %>" rel="bookmark">
-              <%= item.date.format(config.date_format) %>
-            </a>
-          </div>
-          <div class="entry-content">
-            <p>
-              <%- item.description %>
-              <a href="<%- config.root %><%- item.path %>" class="more-link link">
-                Czytaj dalej
-                <span class="meta-nav">→</span>
-              </a>
-            </p>
-          </div>
-        </article>
+         <%- partial('article-box', {item: item}) %>
 
       <% }); %>
 
