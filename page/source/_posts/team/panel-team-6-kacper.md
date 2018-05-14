@@ -1,6 +1,6 @@
 ---
 title: Kacper Kula
-categories: panel-team
+categories: team
 image: kacper.jpg
 city: warsaw
 ---

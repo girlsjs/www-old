@@ -1,6 +1,6 @@
 ---
 title: Alicja Pietrzak
-categories: panel-team
+categories: team
 image: Alicja-Pietrzak.png
 city: lodz
 ---

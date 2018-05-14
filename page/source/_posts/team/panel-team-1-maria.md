@@ -1,6 +1,6 @@
 ---
 title: Maria Górska
-categories: panel-team
+categories: team
 image: maria.jpeg
 city: warsaw
 ---

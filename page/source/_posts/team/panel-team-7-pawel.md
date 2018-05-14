@@ -1,6 +1,6 @@
 ---
 title: Paweł Pruszkowski
-categories: panel-team
+categories: team
 image: pawel.jpg
 city: warsaw
 ---

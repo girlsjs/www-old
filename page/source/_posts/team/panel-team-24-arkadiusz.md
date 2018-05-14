@@ -1,6 +1,6 @@
 ---
 title: Arkadiusz Czogała
-categories: panel-team
+categories: team
 image: czogala.jpg
 city: szczecin
 ---

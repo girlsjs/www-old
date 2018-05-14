@@ -1,6 +1,6 @@
 ---
 title: Jarosław Gilewski
-categories: panel-team
+categories: team
 image: gilewski.jpg
 city: szczecin
 ---

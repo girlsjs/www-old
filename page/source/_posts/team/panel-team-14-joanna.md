@@ -1,6 +1,6 @@
 ---
 title: Joanna Bochyńska
-categories: panel-team
+categories: team
 image: Joanna-Bochynska.jpg
 city: poznan
 ---

@@ -1,6 +1,6 @@
 ---
 title: Kamil Koterba
-categories: panel-team
+categories: team
 image: Kamil-Koterba.jpg
 city: poznan
 ---

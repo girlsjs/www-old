@@ -1,6 +1,6 @@
 ---
 title: Maciej Stankiewicz
-categories: panel-team
+categories: team
 image: mac.jpg
 city: warsaw
 ---

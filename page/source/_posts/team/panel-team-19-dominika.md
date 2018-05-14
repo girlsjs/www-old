@@ -1,6 +1,6 @@
 ---
 title: Dominika Szukała
-categories: panel-team
+categories: team
 image: dominika.jpg
 city: cracow
 ---

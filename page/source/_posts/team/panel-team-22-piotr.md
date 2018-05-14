@@ -1,6 +1,6 @@
 ---
 title: Piotr Zimoch
-categories: panel-team
+categories: team
 image: zimoch.png
 city: szczecin
 ---

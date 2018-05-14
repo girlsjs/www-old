@@ -1,6 +1,6 @@
 ---
 title: Daria Zychowicz
-categories: panel-team
+categories: team
 image: daria.jpg
 city: warsaw
 ---

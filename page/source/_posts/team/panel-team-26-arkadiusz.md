@@ -1,6 +1,6 @@
 ---
 title: Arkadiusz Bajowski
-categories: panel-team
+categories: team
 image: bajowski.jpg
 city: szczecin
 ---

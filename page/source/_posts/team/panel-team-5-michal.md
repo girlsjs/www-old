@@ -1,6 +1,6 @@
 ---
 title: Michał Jarosz
-categories: panel-team
+categories: team
 image: michal.jpg
 city: warsaw
 ---

@@ -1,6 +1,6 @@
 ---
 title: Jakub Sowiński
-categories: panel-team
+categories: team
 image: soofka.jpg
 city: warsaw
 ---

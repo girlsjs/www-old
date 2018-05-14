@@ -1,6 +1,6 @@
 ---
 title: Monika Filipkowska
-categories: panel-team
+categories: team
 image: Monika-Filipkowska.jpg
 city: poznan
 ---

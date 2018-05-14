@@ -1,6 +1,6 @@
 ---
 title: Magda Niedźwiecka
-categories: panel-team
+categories: team
 image: ada.jpg
 city: cracow
 ---

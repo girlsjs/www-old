@@ -1,6 +1,6 @@
 ---
 title: Olga Stefaniuk
-categories: panel-team
+categories: team
 image: olga_stefaniuk.jpg
 city: cracow
 ---

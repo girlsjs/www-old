@@ -13,10 +13,19 @@ body {
   margin: 36px auto;
 }
 
+.page > .content {
+  margin-top: 0px;
+  overflow: auto;
+}
+
 @media screen and (max-width: 1000px) {
   .content {
     width: 80%
   }
+}
+
+.clearfix {
+  clear: both;
 }
 
 @import './panel-faq.scss';
@@ -96,26 +105,25 @@ a.button:hover,
 --------------------------------------------------------------*/
 
 
-
 h1 {
-  color: #275e96; /*#31536f;*/
-  font-size: 2.625rem;
+  color: #275e96;
+  font-size: 32px;
   text-align: center;
   font-weight: 400;
   margin: 30px 0 6px;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 36px;
 }
 
 h2, h3, h4, h5 {
   font-weight: 400;
   color: #3b3b3b;
   margin: 0.75em 0 1.125em;
-  line-height: 1.3125;
+  line-height: 36px;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 32px;
 }
 
 h2:after {
@@ -481,56 +489,6 @@ article p {
   }
 }
 
-
-/*--------------------------------------------------------------
-## Gallery
---------------------------------------------------------------*/
-
-.gallery-thumb {
-  width: 305px;
-  height: 208px;
-  display: inline-block;
-  margin: 6px;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 400px) {
-  .gallery-thumb {
-    width: 250px;
-    height: 170px;
-  }
-}
-
-.gallery-thumb > div {
-  width: 305px;
-  height: 208px;
-  background-size: cover;
-
-  transition: transform 0.6s;
-}
-
-@media screen and (max-width: 400px) {
-  .gallery-thumb > div {
-    width: 250px;
-    height: 170px;
-  }
-}
-
-.gallery-thumb:hover > div {
-  transform: scale(1.2);
-}
-
-.gallery-preview {
-  margin: 36px 0;
-  text-align: center;
-}
-
-.button.gallery-open {
-  display: inline-block;
-  margin-bottom: 36px;
-}
-
 .gallery-button {
   text-align: center;
 }
@@ -832,6 +790,20 @@ article p {
 ## News
 --------------------------------------------------------------*/
 
+.post-image {
+  float: left;
+  margin-right: 24px;
+}
+
+.post-header {
+  clear: none;
+  text-align: left;
+}
+
+.post-date {
+
+}
+
 .news-container {
   margin: 36px 0 0;
   text-align: center;
@@ -1081,13 +1053,6 @@ article .file p {
   border-radius: 64px;
   border: solid 3px #eee;
   float: left;
-
-  transition: border-radius 0.6s, transform 0.6s;
-}
-
-.team img:hover {
-  border-radius: 0px;
-  transform: scale(1.5);
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px),
@@ -1153,7 +1118,7 @@ screen and (max-width: 425px) {
   padding: 0;
   display: inline-block;
   transition: background 0.6s;
-  padding: 30px 1.7%;
+  padding: 0;
   text-transform: uppercase;
   display: inline-block;
   height: 80px;
@@ -1165,7 +1130,14 @@ screen and (max-width: 425px) {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  height: 80px;
+  display: block;
+  padding: 0 12px;
+  line-height: 80px;
+  background: #3b3b3b;
+  letter-spacing: 0 !important;
 
+  transition: background 0.6s;
 }
 
 .main-menu a:hover {
@@ -1263,6 +1235,10 @@ screen and (max-width: 425px) {
 
 .frontpage .panel.grey {
   background: #f2f2f2;
+}
+
+.frontpage .panel.light-grey {
+  background: #fafafa;
 }
 
 .triangle-border {

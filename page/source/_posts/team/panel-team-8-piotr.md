@@ -1,6 +1,6 @@
 ---
 title: Piotr Kosiński
-categories: panel-team
+categories: team
 image: piotr.png
 city: warsaw
 ---

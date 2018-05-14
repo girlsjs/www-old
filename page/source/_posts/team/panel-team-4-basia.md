@@ -1,6 +1,6 @@
 ---
 title: Basia Kocimowska
-categories: panel-team
+categories: team
 image: basia.jpg
 city: warsaw
 ---

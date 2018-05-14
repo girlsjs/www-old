@@ -1,6 +1,6 @@
 ---
 title: Mateusz Krzeszowiak
-categories: panel-team
+categories: team
 image: krzeszowiak.jpg
 city: cracow
 ---

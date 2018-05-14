@@ -1,6 +1,6 @@
 ---
 title: Andrii Kovalchuk
-categories: panel-team
+categories: team
 image: Andrii-Kovalchuk.jpg
 city: warsaw
 ---

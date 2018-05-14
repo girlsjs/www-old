@@ -1,6 +1,6 @@
 ---
 title: Alicja Gancarz
-categories: panel-team
+categories: team
 image: alicja.jpg
 city: cracow
 ---

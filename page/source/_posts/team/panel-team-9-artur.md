@@ -1,6 +1,6 @@
 ---
 title: Artur Siery
-categories: panel-team
+categories: team
 image: siara.png
 city: warsaw
 ---

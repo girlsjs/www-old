@@ -1,6 +1,6 @@
 ---
 title: Luiza Kwardys
-categories: panel-team
+categories: team
 image: Luiza-Kwardys.jpg
 city: szczecin
 ---
