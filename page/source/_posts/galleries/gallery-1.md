@@ -1,8 +1,14 @@
 ---
-title: 'girls.js #3'
+title: 'girls.js Warszawa #3'
 date: 2018-03-10 08:51:40
 categories: gallery
 directory: warsaw-3
+description: Znowu to zrobiliśmy! 9 i 10 marca 2018 warsztaty girls.js zagościły w Warszawie już po raz trzeci.
+collage:
+  - IMG_1549.jpg
+  - IMG_1203.jpg
+  - IMG_1577.jpg
+  - IMG_1726.jpg
 photos:
   - IMG_1141.jpg
   - IMG_1142.jpg

@@ -7,7 +7,9 @@
       <% page.posts.filter(function(item) {
         var data = item.categories.data
         return (data.length && data[0].name === 'media')
-       }).each(function(item){ %>
+       })
+       .slice(0, 3)
+       .each(function(item){ %>
 
         <article class="news">
           <a href="<%- config.root %><%- item.path %>" rel="bookmark">

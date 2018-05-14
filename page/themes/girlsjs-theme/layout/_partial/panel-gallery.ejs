@@ -1,0 +1,52 @@
+<div class="panel" id="news">
+  <section class="content news-wrapper center">
+    <a name="news"></a>
+    <h2>Jak to wygląda</h2>
+    <p class="intro">Galerie z poprzednich edycji.</p>
+    <div class="news-container">
+
+      <% page.posts.filter(function(item) {
+          var data = item.categories.data
+          return (data.length && data[0].name === 'gallery')
+         })
+         .slice(0, 3)
+         .each(function(item){
+           var dir = item.directory || '';
+           var path = config.root + 'images/gallery/' + dir + '/';
+      %>
+
+        <article class="news">
+          <a href="<%- config.root %><%- item.path %>" rel="bookmark">
+            <div class="gallery-collage">
+              <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[0] %>)"></div>
+              <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[1] %>)"></div>
+              <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[2] %>)"></div>
+              <div class="gallery-collage-img" style="background-image: url(<%- path %>/<%- item.collage[3] %>)"></div>
+            </div>
+            <h3 class="title entry-title">
+              <%= item.title %>
+            </h3>
+          </a>
+          <div class="date entry-meta">
+            <a href="<%- config.root %><%- item.path %>" rel="bookmark">
+              <%= item.date.format(config.date_format) %>
+            </a>
+          </div>
+          <div class="entry-content">
+            <p>
+              <%- item.description %>
+              <a href="<%- config.root %><%- item.path %>" class="more-link link">
+                <span class="meta-nav">→</span>
+              </a>
+            </p>
+          </div>
+        </article>
+
+      <% }); %>
+
+    </div>
+    <div class="gallery-button">
+      <a href="<%- config.root %>categories/gallery/" class="button">Więcej zdjęć</a>
+    </div>
+  </section>
+</div>
