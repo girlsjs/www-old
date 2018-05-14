@@ -6,7 +6,12 @@
         var dir = item.directory || '';
         var path = config.root + 'images/gallery/' + dir + '/' + photo;
     %>
-      <a class="post-gallery-photo" style="background-image: url(<%- path %>);"></a>
+      <a class="post-gallery-photo" style="background-image: url(<%- path %>);" href="<%-path %>"></a>
     <% }); %>
   <% } %>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      lightGallery(document.querySelector('.post-gallery'));
+    });
+  </script>
 </div>
