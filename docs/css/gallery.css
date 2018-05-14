@@ -30,3 +30,14 @@
   .post-gallery-photo {
     width: 222px;
     height: 148px; } }
+
+.gallery-collage {
+  width: 303px;
+  height: 265px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.gallery-collage-img {
+  width: calc(303px / 2);
+  height: calc(265px / 2);
+  background-size: cover; }
