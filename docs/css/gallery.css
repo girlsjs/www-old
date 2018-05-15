@@ -29,8 +29,18 @@
   display: flex;
   flex-wrap: wrap; }
 
+@media screen and (max-width: 425px) {
+  .gallery-collage {
+    width: 260px;
+    height: 196px; } }
+
 .gallery-collage-img {
   width: calc(303px / 2);
   height: calc(265px / 2);
   background-size: cover;
   background-position: center; }
+
+@media screen and (max-width: 425px) {
+  .gallery-collage-img {
+    width: 130px;
+    height: 98px; } }

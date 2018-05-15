@@ -404,11 +404,21 @@ article p {
   display: flex;
   flex-wrap: wrap; }
 
+@media screen and (max-width: 425px) {
+  .gallery-collage {
+    width: 260px;
+    height: 196px; } }
+
 .gallery-collage-img {
   width: calc(303px / 2);
   height: calc(265px / 2);
   background-size: cover;
   background-position: center; }
+
+@media screen and (max-width: 425px) {
+  .gallery-collage-img {
+    width: 130px;
+    height: 98px; } }
 
 .file-main {
   width: 39%;
@@ -473,7 +483,11 @@ article .file p {
   margin: 0 12px;
   opacity: 0.3; }
 
-.front-header,
+.front-header {
+  max-height: 450px;
+  overflow: hidden;
+  position: relative; }
+
 .front-header .header-photo,
 .front-header .header-photo:before {
   height: 450px; }
@@ -486,8 +500,7 @@ article .file p {
 .hero {
   background: #0055a9;
   /* #285f95;*/
-  color: white;
-  overflow: auto; }
+  color: white; }
 
 .hero .header-photo {
   position: absolute;
@@ -513,15 +526,15 @@ article .file p {
   position: relative;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-top: 40px; }
+  padding-top: 42px; }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
   .hero .content {
-    padding-top: 48px; } }
+    padding-top: 18px; } }
 
 @media screen and (max-width: 460px) {
   .hero .content {
-    padding-top: 36px; } }
+    padding-top: 12px; } }
 
 .hero .sub-heading,
 .hero .sup-heading {
@@ -530,6 +543,12 @@ article .file p {
   text-align: center;
   font-size: 20px;
   text-shadow: 0 0 10px #4c4c4c; }
+
+@media screen and (max-width: 600px) {
+  .hero .sub-heading,
+  .hero .sup-heading {
+    font-size: 16px;
+    line-height: 18px; } }
 
 .hero .sub-heading {
   margin: 18px 0 20px; }
@@ -543,15 +562,20 @@ article .file p {
   margin-top: 2px;
   margin-bottom: 24px; }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 600px) {
   .hero .heading {
-    font-size: 30px; } }
+    margin-bottom: 12px; } }
 
 .hero .heading > span {
   /* background: #ffc303; */
   padding: 2px 10px; }
 
-.hero .button.primary, .button.disabled {
+@media screen and (max-width: 600px) {
+  .hero .heading {
+    font-size: 30px; } }
+
+.hero .button.primary,
+.hero .button.disabled {
   color: white;
   padding: 18px;
   line-height: 24px;
@@ -561,19 +585,11 @@ article .file p {
   margin: 12px 0 0;
   border: 0; }
 
-@media screen and (max-width: 570px) {
-  .front-header .button.primary, .button.disabled {
-    width: auto;
-    display: block;
-    box-sizing: border-box;
-    margin: 18px 10% 0;
-    padding: 9px 36px;
-    font-size: 18px; } }
-
-@media screen and (max-width: 360px) {
-  .hero .button.primary, .button.disabled {
-    padding: 6px;
-    font-size: 16px; } }
+@media screen and (max-width: 600px) {
+  .hero .button.primary,
+  .hero .button.disabled {
+    font-size: 16px;
+    padding: 12px 10px; } }
 
 .hero .button.secondary {
   display: inline-block;
@@ -581,14 +597,13 @@ article .file p {
   color: white;
   border: solid 2px white; }
 
+@media screen and (max-width: 600px) {
+  .hero .button.secondary {
+    font-size: 16px; } }
+
 .hero h1 {
   color: #fff;
   font-weight: 700; }
-
-@media screen and (max-width: 570px) {
-  .hero .button.secondary {
-    display: block;
-    margin: 18px 10% 0; } }
 
 .hero .button.primary:hover {
   background: white;
@@ -600,18 +615,15 @@ article .file p {
 
 .hero .more-buttons {
   text-align: center;
-  margin-top: 30px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .hero .more-buttons > a {
   display: block;
   flex-basis: 1;
   width: 214px; }
-
-@media screen and (max-width: 570px) {
-  .hero .more-buttons {
-    margin: 18px 0 0; } }
 
 .hero .hero-col {
   display: flex; }
@@ -624,6 +636,11 @@ article .file p {
 .hero .hero-what {
   text-align: center;
   font-size: 18px; }
+
+@media screen and (max-width: 600px) {
+  .hero .hero-what {
+    text-align: center;
+    font-size: 14px; } }
 
 .content .posts {
   margin: 36px 0 18px;
@@ -778,7 +795,9 @@ article .file p {
 
 @media screen and (max-width: 826px) {
   .news .date {
-    margin-bottom: 18px; } }
+    margin-bottom: 18px; }
+  .news .entry-content {
+    padding-bottom: 12px; } }
 
 .news p {
   color: #8e8e8e;

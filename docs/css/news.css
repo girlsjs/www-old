@@ -151,7 +151,9 @@
 
 @media screen and (max-width: 826px) {
   .news .date {
-    margin-bottom: 18px; } }
+    margin-bottom: 18px; }
+  .news .entry-content {
+    padding-bottom: 12px; } }
 
 .news p {
   color: #8e8e8e;
