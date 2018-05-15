@@ -13,7 +13,7 @@
         <div class="gallery-collage-img" style="background-image: url(<%- path %><%- item.collage[3] %>)"></div>
       </div>
     <% } else if (item.image) { %>
-      <img src="<%- config.root %>images/<%- item.image %>"/>
+      <img src="<%- config.root %>images/posts/<%- item.image %>"/>
     <% } %>
 
     <h3 class="title entry-title">
@@ -28,10 +28,11 @@
   <div class="entry-content">
     <p>
       <%- item.description %>
-      <a href="<%- config.root %><%- item.path %>" class="more-link link">
-        Czytaj dalej
-        <span class="meta-nav">→</span>
-      </a>
+      <div>
+        <a href="<%- config.root %><%- item.path %>" class="more-link link">
+          Więcej <span class="meta-nav">→</span>
+        </a>
+      </div>
     </p>
   </div>
 </article>

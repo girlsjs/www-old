@@ -88,3 +88,5 @@ photos:
 19 listopada 2016 r. odbyły się pierwsze, próbne warsztaty dla 9 uczestniczek.
 
 Kilkadziesiąt kubków kawy i wszechobecne żółte kaczuszki. A atmosfera? Oceńcie sami i obejrzyjcie [film](https://vimeo.com/196253981) i fotorelację z tego dnia. Dziękujemy sponsorom za wsparcie i wiarę w nasz pomysł, a warsztatowiczkom – za otwartość, perfekcyjne przygotowanie i maksymalną koncentrację. Nauczyliśmy się od Was co najmniej tyle samo, co Wy od nas!
+
+Autorkami zdjęć są [Anna Juszkiewicz](https://www.facebook.com/Anna-Juszkiewicz-Fotografia-1634745429870281/) i  Katarzyna Niedźwiedzka
