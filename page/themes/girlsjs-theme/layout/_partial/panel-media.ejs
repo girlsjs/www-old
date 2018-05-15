@@ -1,7 +1,7 @@
 <div class="panel white" id="mediaonas">
   <section class="content news-wrapper center">
     <a name="media"></a>
-    <h2>Media o nas</h2>
+    <h2 class="h1">Media o nas</h2>
     <p class="intro">Czasami o nas piszą.</p>
     <div class="news-container">
       <% page.posts.filter(function(item) {
@@ -10,7 +10,7 @@
        })
        .slice(0, 3)
        .each(function(item){ %>
-         
+
          <%- partial('article-box', {item: item}) %>
 
       <% }); %>
