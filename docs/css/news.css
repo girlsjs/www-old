@@ -78,11 +78,15 @@
 
 .post-image {
   float: left;
-  margin-right: 24px; }
+  margin-right: 24px;
+  width: 305px; }
 
 .post-header {
   clear: none;
   text-align: left; }
+
+.post-date {
+  color: #8e8e8e; }
 
 .news-container {
   margin: 36px 0 0;
@@ -95,7 +99,7 @@
 .news {
   display: inline-block;
   vertical-align: top;
-  width: 305px;
+  width: 304px;
   text-decoration: none;
   background: #f2f2f2;
   margin: 18px 8px 24px;
@@ -193,3 +197,7 @@ article.blog .entry-wrapper {
 
 .blog .entry-content {
   margin: 0; }
+
+.pager {
+  display: flex;
+  justify-content: space-between; }
