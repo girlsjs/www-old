@@ -1,0 +1,159 @@
+
+.summary-wrapper {
+  background: #3c7cbb; /* #0055a9 */
+  overflow: hidden;
+  position: relative;
+  margin-top: -2.4em;
+}
+
+.summary-wrapper::before {
+  display: block;
+  content: "";
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url("../img/header-mosaic.png");
+  background-attachment: fixed;
+  opacity: 0.48;
+}
+
+.summary-wrapper::after {
+  content: "";
+  display: block;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  background: white;
+  top: -450px;
+  left: 0;
+  transform-origin: top left;
+  transform: skewY(3.5deg);
+}
+
+.summary-wrapper > .content {
+  position: relative;
+  z-index: 10;
+}
+
+.summary-wrapper h3 {
+  text-align: center;
+  padding-top: 215px;
+}
+
+@media screen and (max-width: 1000px) {
+  .summary-wrapper h3 {
+    text-align: left;
+    padding-top: 180px;
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .summary-wrapper h3 {
+    text-align: center;
+    padding-top: 215px;
+    padding-bottom: 0;
+  }
+}
+
+.summary-wrapper h3::after {
+  content: none;
+}
+
+.summary-wrapper h3 span {
+  background: #ffc303;
+  padding: 2px 10px;
+  color: white;
+  font-size: 36px;
+  margin: 0 auto;
+  display: inline-block;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px #9a9a9a;
+}
+
+@media screen and (max-width: 768px) {
+  .summary-wrapper h3 span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .summary-wrapper h3 span {
+    font-size: 24px;
+  }
+}
+
+.summary-box {
+  color: white;
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+
+.summary-item {
+  text-align: center;
+  margin-bottom: 24px
+}
+
+@media screen and (max-width: 600px) {
+  .summary-item {
+    width: 100px;
+  }
+
+  .summary-border {
+    display: none;
+  }
+}
+
+.summary-border {
+  height: 84px;
+  width: 1px;
+  border-left: solid 1px white;
+}
+
+.summary-item .count {
+  font-size: 42px;
+  padding-top: 2px;
+}
+
+.summary-item .title {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .summary-item .count {
+    font-size: 36px;
+    padding-top: 2px;
+  }
+
+  .summary-item .title {
+    font-size: 16px;
+  }
+}
+
+.chinese-duck {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  width: 243px;
+  height: 261px;
+  background: url("../img/chinese-duck.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .chinese-duck {
+    width: 180px;
+  }
+}
+
+.gallery-button {
+  text-align: center;
+}

@@ -1,0 +1,127 @@
+.top-bar {
+  background: #3b3b3b;
+  height: 80px;
+  position: relative;
+}
+
+.top-bar .content {
+  position: relative;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 360px) {
+  .top-bar .content {
+    margin: 0 2%;
+    width: 94%;
+  }
+}
+
+.top-bar .custom-logo {
+  width: 180px;
+  height: 68px;
+  float: left;
+  margin-top: 6px;
+}
+
+.main-menu {
+  color: white;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.main-menu ul {
+  list-style-type: none;
+  list-style: none;
+}
+
+.main-menu ul > li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  transition: background 0.6s;
+  padding: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.main-menu .menu-item a,
+.main-menu .menu-item a:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  height: 80px;
+  display: block;
+  padding: 0 12px;
+  line-height: 80px;
+  background: #3b3b3b;
+  letter-spacing: 0 !important;
+
+  transition: background 0.6s;
+}
+
+.main-menu .menu-item a:hover {
+  background: #5c5c5c;
+}
+
+.main-menu .menu-item a > span {
+  display: inline-block;
+  transition: transform 0.6s;
+}
+
+.main-menu .menu-item a:hover > span {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 910px) {
+  .main-menu {
+    display: none;
+    width: 120px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    background: #3b3b3b;
+    z-index: 100;
+    top: 80px;
+  }
+
+  .main-menu a {
+    display: block;
+    padding: 10px;
+    height: auto;
+  }
+}
+
+.contact-menu {
+  position: absolute;
+  right: -150px;
+  top: 18px;
+}
+
+.contact-menu a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin: 10px;
+  transition: transform 0.6s;
+}
+
+.contact-menu a:hover {
+  transform: scale(1.2);
+}
+
+.contact-menu .fb {
+  background: url('../img/top-fb.png');
+}
+.contact-menu .mail {
+  background: url('../img/top-mail.png');
+}
+
+@media screen and (max-width: 1275px) {
+  .contact-menu {
+    position: static;
+    float: right;
+    margin-top: 18px;
+  }
+}

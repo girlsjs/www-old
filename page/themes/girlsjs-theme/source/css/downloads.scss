@@ -1,0 +1,51 @@
+
+.file-main {
+    width: 39%;
+    margin-right: 63%;
+    margin-left: 7%;
+    text-align: right;
+}
+
+.file {
+    background: #f2f2f2;
+    border: solid 1px #d8d8d8;
+    position: relative;
+    padding-left: 20%;
+}
+
+.file:before {
+    content: "";
+    width: 22%;
+    height: 135px;
+    background: url(../img/download.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -20px;
+    left: -5%;
+}
+
+article.col2 .file h3,
+.materials h3 {
+  margin: 6px;
+  clear: none;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+article.col2 .file h3:after,
+.materials h3:after
+{ display: none; }
+
+article .file p {
+  margin: 6px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #8c8c8c;
+}
+
+.materials-thumbnail {
+  position: relative;
+  float: right;
+  width: 50%;
+}
+.content.materials article:nth-of-type(n + 4) .file { margin-top: 50px; }
