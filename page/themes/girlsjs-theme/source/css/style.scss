@@ -323,11 +323,13 @@ article p {
   border-bottom: 1px solid #ccc;
 }
 
-.frontpage .panel.grey {
+.frontpage .panel.grey,
+.content-wrapper.grey {
   background: #f2f2f2;
 }
 
-.frontpage .panel.light-grey {
+.frontpage .panel.light-grey,
+.content-wrapper.light-grey {
   background: #fafafa;
 }
 

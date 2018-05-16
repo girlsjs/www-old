@@ -1,22 +1,76 @@
-<a name="team"></a>
-
-<div class="team-items team">
-  <% var posts = site.posts.filter(function(item) {
+<%
+ var posts = site.posts.filter(function(item) {
       var data = item.categories.data
       return (data.length && data[0].name === 'team')
     });
 
     posts.data.reverse();
-    posts.each(function(item){
-  %>
 
-    <article id="post-54" class="col2 team type-team">
-      <h4 class="entry-title"><%- item.title %></h4>
-      <img src="<%- config.root %>images/team/<%- item.image %>"/>
-      <div class="entry-main-content">
-        <%- item.content %>
-      </div>
-    </article>
+    posts.data.sort((a, b) => {
+      var indexA = /-(\d+)-/g.exec(a.path)[1]
+      var indexB = /-(\d+)-/g.exec(b.path)[1]
 
-  <% }); %>
+      return indexA - indexB;
+    })
+%>
+
+<div class="content-wrapper light-grey">
+  <section class="content team-content">
+    <h2 class="team-city">Warszawa</h2>
+    <div class="team-items team">
+      <% posts.filter(i => i.city === 'warsaw').each(function(item){ %>
+        <%- partial('team-item', {item: item})%>
+      <% }); %>
+    </div>
+  </section>
 </div>
+
+
+<div class="content-wrapper grey">
+  <section class="content team-content">
+    <h2 class="team-city">Poznań</h2>
+    <div class="team-items team">
+      <% posts.filter(i => i.city === 'poznan').each(function(item){ %>
+        <%- partial('team-item', {item: item})%>
+      <% }); %>
+    </div>
+  </section>
+</div>
+
+
+<div class="content-wrapper light-grey">
+  <section class="content team-content">
+    <h2 class="team-city">Szczecin</h2>
+    <div class="team-items team">
+      <% posts.filter(i => i.city === 'szczecin').each(function(item){ %>
+        <%- partial('team-item', {item: item})%>
+      <% }); %>
+    </div>
+  </section>
+</div>
+
+
+<div class="content-wrapper grey">
+  <section class="content team-content">
+    <h2 class="team-city">Kraków</h2>
+    <div class="team-items team">
+      <% posts.filter(i => i.city === 'cracow').each(function(item){ %>
+        <%- partial('team-item', {item: item})%>
+      <% }); %>
+    </div>
+  </section>
+</div>
+
+
+<div class="content-wrapper light-grey">
+  <section class="content team-content">
+    <h2 class="team-city">Łódź</h2>
+    <div class="team-items team">
+      <% posts.filter(i => i.city === 'lodz').each(function(item){ %>
+        <%- partial('team-item', {item: item})%>
+      <% }); %>
+    </div>
+  </section>
+</div>
+
+<div class="team-spacer"></div>
