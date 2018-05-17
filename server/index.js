@@ -1,9 +1,12 @@
 const express = require('express');
+var bodyParser = require('body-parser')
 const path = require('path');
-const app = express();
 const Hexo = require('hexo');
-const config = require('./config.json');
 const simpleGit = require('simple-git');
+const config = require('./config.json');
+
+const app = express();
+app.use(bodyParser.json());
 
 const projectDir = path.join(__dirname, '..');
 const baseDir = path.join(__dirname, '..', 'pl');
@@ -28,8 +31,8 @@ const rebuild = () => git
   })
 
 
-app.get('/regenerate', (req, res) => {
-  if (config.key === req.query.key) {
+app.post('/regenerate', (req, res) => {
+  if (config.key === req.body.key) {
     rebuild()
     res.send('Success');
   } else {
@@ -39,4 +42,4 @@ app.get('/regenerate', (req, res) => {
 
 app.use('/', express.static(buildDir));
 
-app.listen(3030);
+app.listen(config.port || 3030);
