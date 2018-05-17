@@ -3,3 +3,4 @@ db.json
 .DS_Store
 build/
 server/config.json
+debug.log

@@ -3,7 +3,9 @@ const path = require('path');
 const app = express();
 const Hexo = require('hexo');
 const config = require('./config.json');
+const simpleGit = require('simple-git');
 
+const projectDir = path.join(__dirname, '..');
 const baseDir = path.join(__dirname, '..', 'pl');
 const buildDir = path.join(__dirname, '..', 'build', 'pl');
 
@@ -15,9 +17,15 @@ const options = {
 const hexo = new Hexo(baseDir, options);
 hexo.init();
 
-const rebuild = () => hexo
-  .call('generate', {})
-  .catch((e) => console.error(e));
+const git = simpleGit(projectDir);
+
+const rebuild = () => git
+  .silent(false)
+  .pull('origin', 'master', () => {
+    hexo
+      .call('generate', {})
+      .catch((e) => console.error(e));
+  })
 
 
 app.get('/regenerate', (req, res) => {
