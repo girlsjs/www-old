@@ -248,10 +248,12 @@ article p {
 .frontpage .panel.underline {
   border-bottom: 1px solid #ccc; }
 
-.frontpage .panel.grey {
+.frontpage .panel.grey,
+.content-wrapper.grey {
   background: #f2f2f2; }
 
-.frontpage .panel.light-grey {
+.frontpage .panel.light-grey,
+.content-wrapper.light-grey {
   background: #fafafa; }
 
 .triangle-border {
@@ -1012,7 +1014,7 @@ article.blog .entry-wrapper {
   margin-bottom: 42px; }
 
 .team h4 {
-  margin: 6px 0 6px;
+  margin: 12px 0 12px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
@@ -1020,7 +1022,9 @@ article.blog .entry-wrapper {
 
 .team p {
   margin-top: 6px;
-  margin-left: 156px; }
+  margin-left: 156px;
+  margin-bottom: 0;
+  padding-bottom: 12px; }
 
 .team img {
   width: 128px;
@@ -1029,7 +1033,7 @@ article.blog .entry-wrapper {
   border: solid 3px #eee;
   float: left; }
 
-@media screen and (min-width: 601px) and (max-width: 1000px), screen and (max-width: 425px) {
+@media screen and (min-width: 601px), screen and (max-width: 425px) {
   .team h4 {
     text-align: center; }
   .team p,
@@ -1039,6 +1043,17 @@ article.blog .entry-wrapper {
     display: block;
     margin: 0 auto;
     float: none; } }
+
+.team-city {
+  margin: 0;
+  padding: 24px 0 6px; }
+
+.team-content {
+  margin: 0 auto;
+  padding-bottom: 24px; }
+
+.team-spacer {
+  margin-bottom: 18px; }
 
 .top-bar {
   background: #3b3b3b;
