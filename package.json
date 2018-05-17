@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "express": "^4.16.3",
+    "hexo": "^3.7.1",
     "hexo-cli": "^1.1.0"
   }
 }
